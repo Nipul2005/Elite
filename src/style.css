@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'jost';
+  src: url('./fonts/Jost-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap
+}
+@font-face {
+  font-family: 'jost';
+  src: url('./fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap
+}
+
+
+@theme {
+  --color-primary: #213f78;
+  --color-secondary: #e31e24;
+  --color-pure: #111;
+  --color-black: #333;
+  --color-white: #fff;
+}
+
+*{
+  font-family: "jost", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}

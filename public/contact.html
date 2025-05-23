@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/style.css" rel="stylesheet" />
+
+    <!-- remixicon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-auto bg-white">
+    <header
+      class="w-full h-auto py-3 bg-white border-b border-primary/90 sticky top-0 z-10"
+    >
+      <nav
+        class="flex md:justify-around justify-between items-center md:px-0 px-5"
+      >
+        <a href="/">
+          <img
+            src="/eliteLogo.png"
+            alt="Elite Computer Institute"
+            class="sm:w-54 w-40"
+            loading="lazy"
+            title="Elite Computer Institute"
+          />
+        </a>
+        <ul class="md:flex gap-8 text-lg hidden text-black">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/courses" class="nav-link">Courses</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+        <i
+          class="ri-menu-2-line text-black text-2xl md:hidden cursor-pointer"
+        ></i>
+        <button
+          class="bg-primary text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
+        >
+          Enroll Now
+        </button>
+      </nav>
+    </header>
+    <main class="w-full h-auto relative">
+      <section
+        class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-10"
+      >
+        <div class="flex-1 self-stretch flex justify-end items-center">
+          <img
+            src="/contact.jpeg"
+            alt="Elite Computer Institute"
+            class="w-full h-full rounded-lg"
+          />
+        </div>
+        <div
+          class="flex-2 flex flex-col justify-between items-start self-stretch sm:px-5 px-4 gap-y-20 border border-primary/30 sm:py-10 py-5 rounded-lg bg-primary"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-y-3 text-white"
+          >
+            <h2
+              class="sm:text-lg text-white text-sm tracking-wider font-semibold"
+            >
+              Get in Touch with
+            </h2>
+            <h1 class="lg:text-8xl md:text-7xl text-5xl sm:max-w-5/6 w-full">
+              Elite Computer Institute
+            </h1>
+          </div>
+          <p
+            class="sm:text-sm text-xs sm:max-w-2/6 self-end font-semibold text-white leading-6 italic tracking-widest"
+          >
+            We're here to help you on your learning journey. Contact us today!
+          </p>
+        </div>
+      </section>
+      <section
+        class="w-full sm:py-18 py-7 sm:container sm:mx-auto px-4 flex sm:flex-row flex-col-reverse justify-between items-start gap-x-4 gap-y-5"
+      >
+        <!-- GOOGLE MAP BOX -->
+        <div class="flex-1 self-stretch overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14103.521396630553!2d77.06795844999999!3d28.597560400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b7571c1d0bf%3A0x80246090fb7af10d!2sElite%20Computer%20Institute!5e1!3m2!1sen!2sin!4v1747569117411!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-full rounded-lg hover:scale-105 transition-transform duration-500"
+            title="map"
+          ></iframe>
+        </div>
+
+        <!-- FORM  BOX -->
+        <div class="flex-1">
+          <h2
+            class="sm:text-5xl text-3xl mb-5 text-pure border-b border-pure pb-5 w-full"
+            style="text-align: left"
+          >
+            Contact Us
+          </h2>
+
+          <!-- FORM -->
+          <form
+            class="w-full flex flex-col justify-start items-start gap-y-4 text-primary"
+          >
+            <span class="w-full flex justify-start items-center gap-x-2">
+              <input
+                type="text"
+                placeholder="Enter your Name*"
+                class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+              />
+              <input
+                type="number"
+                placeholder="Enter your Mobile Number*"
+                class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+              />
+            </span>
+            <span class="w-full flex justify-start items-center gap-x-2">
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+              />
+              <select
+                class="w-full p-2 outline-none border border-gray-300 rounded-full px-2 cursor-pointer"
+              >
+                <option>Select Course</option>
+                <option>MIS :- Management Information System</option>
+                <option>DCTT :- Digital Computer Teacher Training</option>
+                <option>DET :- Diploma in E-accounting and Taxation</option>
+                <option>ESC :- English Speaking Course</option>
+                <option>DCA :- Diploma in Computer Application</option>
+                <option>COA :- Certification in Office Automation</option>
+                <option>CVE :- Certification in Video Editing</option>
+                <option>DGD :- Diploma in Graphic Designing</option>
+                <option>DTP :- Certification in Desktop Publishing</option>
+                <option>CCO :- Certification in Computer Operating</option>
+                <option>CFA :- Certification in Financial Accounting</option>
+                <option>
+                  DWD :- Diploma in Web Designing &amp; Multimedia
+                </option>
+              </select>
+            </span>
+            <textarea
+              placeholder="Enter your Message"
+              class="w-full p-2 outline-none border border-gray-300 rounded-md px-5"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-primary sm:w-auto w-full text-white px-12 py-2 rounded-full cursor-pointer self-end hover:bg-primary/80 duration-200"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full sm:p-8 sm:pb-0 bg-primary text-white text-center px-4 pt-7"
+    >
+      <div
+        class="w-full flex sm:flex-row flex-col justify-between items-start gap-y-5 gap-x-5 pb-5 relative h-auto"
+      >
+        <div class="text-white w-full">
+          <h3
+            class="text-2xl text-white border-b border-white pb-1 text-start mb-2 w-full"
+          >
+            Our Courses
+          </h3>
+          <div class="w-full flex flex-col justify-start items-start gap-y-1">
+            <a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#MIS"
+              data-discover="true"
+              >Management Information System</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DCTT"
+              data-discover="true"
+              >Digital Computer Teacher Training</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DET"
+              data-discover="true"
+              >Diploma in E-accounting and Taxation</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#ESC"
+              data-discover="true"
+              >English Speaking Course</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DCA"
+              data-discover="true"
+              >Diploma in Computer Application</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#COA"
+              data-discover="true"
+              >Certification in Office Automation</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#CVE"
+              data-discover="true"
+              >Certification in Video Editing</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DGD"
+              data-discover="true"
+              >Diploma in Graphic Designing</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DTP"
+              data-discover="true"
+              >Certification in Desktop Publishing</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#CCO"
+              data-discover="true"
+              >Certification in Computer Operating</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#CFA"
+              data-discover="true"
+              >Certification in Financial Accounting</a
+            ><a
+              class="w-full text-sm text-start inline-block text-white/80 hover:text-white hover:underline duration-200 ease-in-out cursor-pointer"
+              href="/courses/#DWD"
+              data-discover="true"
+              >Diploma in Web Designing &amp; Multimedia</a
+            >
+          </div>
+        </div>
+        <div class="w-full">
+          <h3
+            class="text-2xl text-white border-b border-white pb-1 text-start mb-2 w-full"
+          >
+            Typing &amp; ShortHand
+          </h3>
+          <div class="flex flex-col justify-start items-start gap-y-2">
+            <div
+              class="w-full flex justify-between items-center gap-x-4 border border-white/20 p-2 rounded-md"
+            >
+              <p class="w-full text-sm text-start">
+                COMPUTER TYPING (HINDI/ENGLISH)
+              </p>
+              <span
+                class="w-full flex flex-col justify-start items-start text-white/80 text-sm gap-y-1 text-start"
+                ><p>1 Year :- Diploma Course</p>
+                <p>6 Month :- Certificate Course</p>
+                <p>3 Months :- Basic Course</p></span
+              >
+            </div>
+            <div
+              class="w-full flex justify-between items-center gap-x-4 border border-white/20 p-2 rounded-md"
+            >
+              <p class="w-full text-sm text-start">SHORTHAND (HINDI/ENGLISH)</p>
+              <span
+                class="w-full flex flex-col justify-start items-start text-white/80 text-sm gap-y-1 text-start"
+                ><p>1 Year :- Diploma Course</p>
+                <p>6 Month :- Certificate Course</p>
+                <p>3 Months :- Basic Course</p></span
+              >
+            </div>
+          </div>
+          <div class="w-full mt-2">
+            <h3
+              class="text-2xl text-white border-b border-white pb-1 text-start mb-2 w-full"
+            >
+              Crash Courses
+            </h3>
+            <p class="text-start text-sm text-white/80 leading-6">
+              Advance Excel, Auto Card, Ms-Access HTML JAVA, C Language, C++,
+              Language, 3D Max, Visual Basic, Advance Tally, Tally Taxation,
+              Busy, VFX, Flash, After Effect, PHP, J Query, Bootstrap, Hosting,
+              SEO
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col justify-start items-start self-stretch"
+        >
+          <h3
+            class="text-2xl text-white border-b border-white pb-1 text-start mb-2 w-full"
+          >
+            Contact Us
+          </h3>
+          <div class="space-y-3">
+            <span class="flex justify-start items-start gap-x-2 text-start"
+              ><i class="ri-map-pin-line"></i>
+              <p class="text-sm text-white/80">
+                first floor, D-234, Bharat Vihar Rd, Block C, Madhu Vihar, New
+                Delhi, Delhi, 110059
+              </p></span
+            ><span class="flex justify-start items-start gap-x-2 text-start"
+              ><i class="ri-phone-line"></i
+              ><a
+                href="tel:08447286799"
+                class="text-sm hover:underline text-white/80"
+                >084472 86799</a
+              ></span
+            >
+          </div>
+          <span class="flex gap-2 mt-4 place-self-end"
+            ><i
+              class="ri-linkedin-line w-8 h-8 border border-white/20 flex justify-center items-center text-md hover:border-white transition-all ease cursor-pointer duration-200 hover:rounded-sm"
+              title="Linkedin"
+            ></i
+            ><a
+              href="https://www.facebook.com/ElitecomputerinstituteMadhuVihar/"
+              target="_blank"
+              title="Facebook"
+              ><i
+                class="ri-facebook-line w-8 h-8 border border-white/20 flex justify-center items-center text-md hover:border-white transition-all ease cursor-pointer duration-200 hover:rounded-sm"
+              ></i></a
+            ><a
+              href="https://www.instagram.com/elite_institute/"
+              target="_blank"
+              title="Instagram"
+              ><i
+                class="ri-instagram-line w-8 h-8 border border-white/20 flex justify-center items-center text-md hover:border-white transition-all ease cursor-pointer duration-200 hover:rounded-sm"
+              ></i></a
+          ></span>
+        </div>
+      </div>
+      <div
+        class="flex justify-center items-center gap-x-3 text-white border-t border-white py-4 text-sm"
+      >
+        <img
+          src="/fevicon.ico"
+          alt="Elite Computer Institute"
+          class="w-10 h-10 aspect-square hover:animate-spin cursor-pointer"
+          loading="lazy"
+          title="All rights reserved by Elite Computer Institute"
+        />
+        <p class="text-start">
+          © 2025<span class="font-semibold"> Elite Computer Institute. </span
+          >All rights reserved | Developed &amp; Maintain By
+          <span class="font-semibold">
+            <a href="https://turtlabs.vercel.app/" target="_blank"
+              >Turtlabs</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <div
+      class="fixed top-1/2 bg-primary z-20 p-2 text-white flex justify-start items-center gap-x-3 rounded-tl-full rounded-bl-full hover:right-0 transition-all duration-300 ease-in-out cursor-pointer border border-white"
+      style="right: -6.25rem"
+    >
+      <i
+        class="ri-arrow-left-double-line text-xl border-r w-6 h-6 flex justify-center items-center pr-2"
+      ></i
+      ><a href="tel:9205470224" title="call us"
+        ><i class="ri-phone-line text-xl"></i></a
+      ><a href="mailto:pnipul7678@gmail.com" title="email us"
+        ><i class="ri-mail-line text-xl"></i></a
+      ><a
+        href="https://wa.me/9205470224"
+        target="_blank"
+        title="chat on Whatsapp"
+        ><i class="ri-whatsapp-line text-xl"></i
+      ></a>
+    </div>
+  </body>
+</html>
