@@ -5,5 +5,5 @@
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/courses", "destination": "/courses.html" },
     { "source": "/courses/", "destination": "/courses.html" }
-  ]
+  ]  
 }
