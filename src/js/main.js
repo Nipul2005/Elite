@@ -3,6 +3,7 @@ const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
 const showMore = document.getElementById("showMore");
 const cards = document.querySelectorAll(".cards");
+const carousel = document.getElementById("carousel");
 
 let currentIndx = 0;
 let cardsPerSlide;
@@ -56,14 +57,21 @@ function prevSlide() {
 }
 
 setInterval(() => {
-  if(currentIndx !=totalCards / cardsPerSlide - 1){
+  if (currentIndx != totalCards / cardsPerSlide - 1) {
     nextSlide();
-  }else{
+  } else {
     currentIndx = 0;
     updateCrousel();
-    rightArrow.classList.remove("opacity-0");  
+    rightArrow.classList.remove("opacity-0");
   }
 }, 4000);
 
 rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
+
+const arr = ["c1.jpeg", "c2.jpg", "c3.jpg", "c4.jpg"];
+
+setInterval(() => {
+  const random = Math.floor(Math.random() * arr.length);
+  carousel.src = `/${arr[random]}`;
+}, 4000);

@@ -108,6 +108,7 @@
         </ul>
         <i
           class="ri-menu-2-line text-black text-2xl md:hidden cursor-pointer"
+          id="open"
         ></i>
         <button
           class="bg-primary text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
@@ -117,16 +118,38 @@
       </nav>
     </header>
     <main class="w-full h-auto relative">
+      <!-- sidebar for mobile view -->
+      <div
+        class="w-full fixed right-0 -top-100 bg-primary z-30 overflow-y-hidden flex justify-between items-center gap-3 transition-all duration-500 ease-in-out md:hidden px-4 py-7"
+        id="sidebar"
+      >
+        <ul class="flex flex-col gap-y-3 text-lg text-white">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <i
+          class="ri-close-large-line text-white cursor-pointer text-lg self-start"
+          id="close"
+        ></i>
+      </div>
+
       <!-- hero section -->
       <section
         class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-5"
       >
-        <div class="flex-1 self-stretch flex justify-end items-center">
-          <img
-            src="/1.jpeg"
-            alt="Elite Computer Institute"
-            class="w-full h-full rounded-lg"
-          />
+        <div class="flex-1 self-stretch overflow-hidden">
+          <div
+            class="w-full h-full flex justify-start items-start overflow-x-auto"
+          >
+            <img
+              src="/c1.jpeg"
+              alt="Elite Computer Institute"
+              class="h-full aspect-square rounded-lg shrink-0"
+              id="carousel"
+            />
+          </div>
         </div>
         <div
           class="lg:flex-2 flex-1 flex flex-col justify-between items-start self-stretch sm:px-5 px-4 gap-y-20 border border-primary/30 sm:py-10 py-5 rounded-lg bg-primary"
@@ -353,7 +376,7 @@
 
             <!-- 2nd row -->
             <div
-              class="w-full flex sm:flex-row flex-col justify-start items-start gap-4"
+              class="w-full sm:flex sm:flex-row flex-col justify-start items-start gap-4 cards hidden"
             >
               <div
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
@@ -680,7 +703,7 @@
             Why Choose Us?
           </h2>
           <p
-            class="text-black sm:my-8  my-5 text-center sm:max-w-4/6 mx-auto w-full text-md"
+            class="text-black sm:my-8 my-5 text-center sm:max-w-4/6 mx-auto w-full text-md"
           >
             At Elite Computer Institute, Delhi, we offer practical and
             industry-relevant computer training designed to help students master
@@ -725,7 +748,10 @@
                       </h3>
                     </div>
                     <p class="text-md text-black/80">
-                      We have successfully trained over 100 students in Delhi, equipping them with essential computer skills in programming, web development, office tools, and more — helping them build strong foundations for IT careers.
+                      We have successfully trained over 100 students in Delhi,
+                      equipping them with essential computer skills in
+                      programming, web development, office tools, and more —
+                      helping them build strong foundations for IT careers.
                     </p>
                   </div>
                 </div>
@@ -741,11 +767,14 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Expert Programming Courses
+                        Expert Programming Courses
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Master C, C++, Python, and other in-demand programming languages through hands-on training led by experienced instructors — perfect for building a strong coding foundation for IT careers.
+                      Master C, C++, Python, and other in-demand programming
+                      languages through hands-on training led by experienced
+                      instructors — perfect for building a strong coding
+                      foundation for IT careers.
                     </p>
                   </div>
                 </div>
@@ -761,11 +790,14 @@
                       <h3
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Web Development Training
+                        Web Development Training
                       </h3>
                     </div>
                     <p class="text-md text-black/80">
-                      Master both front-end and back-end development through real-world projects. Learn HTML, CSS, JavaScript, and frameworks to build complete, job-ready websites and applications.
+                      Master both front-end and back-end development through
+                      real-world projects. Learn HTML, CSS, JavaScript, and
+                      frameworks to build complete, job-ready websites and
+                      applications.
                     </p>
                   </div>
                 </div>
@@ -781,11 +813,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Hands-on Learning Experience
+                        Hands-on Learning Experience
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Gain real-world skills through live projects and practical assignments. Our training ensures you apply what you learn, preparing you for real IT job scenarios.
+                      Gain real-world skills through live projects and practical
+                      assignments. Our training ensures you apply what you
+                      learn, preparing you for real IT job scenarios.
                     </p>
                   </div>
                 </div>
@@ -801,11 +835,14 @@
                       <h3
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Skilled & Experienced Instructors
+                        Skilled & Experienced Instructors
                       </h3>
                     </div>
                     <p class="text-md text-black/80">
-                      Learn from industry professionals with real-world IT experience. Our instructors provide personalized guidance to help you master practical skills and succeed in your tech career.
+                      Learn from industry professionals with real-world IT
+                      experience. Our instructors provide personalized guidance
+                      to help you master practical skills and succeed in your
+                      tech career.
                     </p>
                   </div>
                 </div>
@@ -821,11 +858,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Job-Ready IT Skills
+                        Job-Ready IT Skills
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Our training emphasizes practical, in-demand skills like programming, web development, and computer applications — helping you become job-ready for the modern IT industry.
+                      Our training emphasizes practical, in-demand skills like
+                      programming, web development, and computer applications —
+                      helping you become job-ready for the modern IT industry.
                     </p>
                   </div>
                 </div>
@@ -841,11 +880,13 @@
                       <h3
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Flexible Class Schedules
+                        Flexible Class Schedules
                       </h3>
                     </div>
                     <p class="text-md text-black/80">
-                      We offer weekend and evening batches to accommodate students, college-goers, and working professionals — making it easy to learn at your own pace.
+                      We offer weekend and evening batches to accommodate
+                      students, college-goers, and working professionals —
+                      making it easy to learn at your own pace.
                     </p>
                   </div>
                 </div>
@@ -861,11 +902,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      upportive Learning Community
+                        upportive Learning Community
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Be part of a vibrant network of learners and mentors. Get help, share ideas, and grow together in a collaborative learning environment.
+                      Be part of a vibrant network of learners and mentors. Get
+                      help, share ideas, and grow together in a collaborative
+                      learning environment.
                     </p>
                   </div>
                 </div>
@@ -881,11 +924,13 @@
                       <h3
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Industry-Recognized Certifications
+                        Industry-Recognized Certifications
                       </h3>
                     </div>
                     <p class="text-md text-black/80">
-                      Receive a certificate upon successful completion of your course — a valuable addition to your resume and proof of your new IT skills.
+                      Receive a certificate upon successful completion of your
+                      course — a valuable addition to your resume and proof of
+                      your new IT skills.
                     </p>
                   </div>
                 </div>
@@ -901,11 +946,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Modern Learning Environment
+                        Modern Learning Environment
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Train in a comfortable, well-equipped classroom with up-to-date systems, tools, and resources that enhance your learning experience.
+                      Train in a comfortable, well-equipped classroom with
+                      up-to-date systems, tools, and resources that enhance your
+                      learning experience.
                     </p>
                   </div>
                 </div>
@@ -921,11 +968,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Personalized Learning Support
+                        Personalized Learning Support
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      Get one-on-one mentorship and doubt-clearing sessions tailored to your pace. Our trainers ensure you stay on track and master every concept effectively.
+                      Get one-on-one mentorship and doubt-clearing sessions
+                      tailored to your pace. Our trainers ensure you stay on
+                      track and master every concept effectively.
                     </p>
                   </div>
                 </div>
@@ -941,11 +990,13 @@
                       <h4
                         class="text-xl font-semibold text-primary self-center"
                       >
-                      Career Support & Counseling
+                        Career Support & Counseling
                       </h4>
                     </div>
                     <p class="text-md text-black/80">
-                      We provide career guidance, resume-building tips, and job interview preparation to help you confidently enter the IT industry.
+                      We provide career guidance, resume-building tips, and job
+                      interview preparation to help you confidently enter the IT
+                      industry.
                     </p>
                   </div>
                 </div>
@@ -967,15 +1018,35 @@
       ></div>
 
       <!-- cta for enrollment -->
-       <section class="w-full h-auto sm:py-18 pt-45 bg-[url('/contact.jpeg')] sm:bg-center bg-top bg-no-repeat sm:bg-fixed bg-contain sm:bg-cover">
-        <div class="w-full h-full flex justify-center items-center">
-          <div class="sm:container sm:mx-auto sm:p-10 px-4 py-7 flex flex-col justify-center sm:items-center gap-y-5 sm:max-w-4/6 sm:rounded-lg sm:bg-white/90 bg-white">
-            <h5 class="sm:text-5xl text-3xl text-primary pb-3 border-b border-black/20 w-full sm:text-center">Brighten with Elite</h5>
-            <p class="text-black text-lg sm:max-w-5/6 w-full sm:text-center">Brighten your future with Elite Computer Institute! Gain essential IT skills, expert training, and hands-on experience in Delhi’s trusted computer institute. Enroll now to start your successful tech career journey!
-            </p>
-            <a href="/contact" class="bg-primary text-white px-8 py-2 rounded-full hover:bg-primary/80 duration-200 ease-in text-center">Contact Us</a>
-          </div>
-       </section>
+      <section
+        class="w-full h-auto sm:py-18 sm:bg-[url('/contact.jpeg')] sm:bg-center bg-top bg-no-repeat sm:bg-fixed bg-contain sm:bg-cover"
+      >
+        <img
+          src="/contact.jpeg"
+          alt="contact"
+          class="w-full h-full sm:hidden object-cover"
+        />
+        <div
+          class="sm:container sm:mx-auto sm:p-10 px-4 py-7 flex flex-col justify-center sm:items-center gap-y-5 sm:max-w-4/6 sm:rounded-lg sm:bg-white/90 bg-white"
+        >
+          <h5
+            class="sm:text-5xl text-3xl text-primary pb-3 border-b border-black/20 w-full sm:text-center"
+          >
+            Brighten with Elite
+          </h5>
+          <p class="text-black text-lg sm:max-w-5/6 w-full sm:text-center">
+            Brighten your future with Elite Computer Institute! Gain essential
+            IT skills, expert training, and hands-on experience in Delhi’s
+            trusted computer institute. Enroll now to start your successful tech
+            career journey!
+          </p>
+          <a
+            href="/contact"
+            class="bg-primary text-white px-8 py-2 rounded-full hover:bg-primary/80 duration-200 ease-in text-center"
+            >Contact Us</a
+          >
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
@@ -1185,6 +1256,7 @@
     </div>
 
     <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/every.js"></script>
     <script
       src="https://static.elfsight.com/platform/platform.js"
       async
