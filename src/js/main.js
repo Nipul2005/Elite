@@ -28,13 +28,12 @@ function nextSlide() {
   cardsPerSlide =
     window.innerWidth < 640 ? (cardsPerSlide = 1) : (cardsPerSlide = 3);
 
-  if (currentIndx > 0) {
-    leftArrow.classList.add("opacity-100");
-  }
-
   if (currentIndx < totalCards / cardsPerSlide - 1) {
     currentIndx = currentIndx + 1;
     updateCrousel();
+  }
+  if (currentIndx > 0) {
+    leftArrow.classList.add("opacity-100");
   }
 
   if (currentIndx == totalCards / cardsPerSlide - 1) {
@@ -43,18 +42,28 @@ function nextSlide() {
 }
 
 function prevSlide() {
-  if (currentIndx == 1) {
-    leftArrow.classList.remove("opacity-100");
-  }
-
-  if (currentIndx < totalCards / cardsPerSlide - 1) {
-    rightArrow.classList.remove("opacity-0");
-  }
   if (currentIndx > 0) {
     currentIndx = currentIndx - 1;
     updateCrousel();
   }
+  if (currentIndx < totalCards / cardsPerSlide - 1) {
+    rightArrow.classList.remove("opacity-0");
+  }
+
+  if (currentIndx == 1) {
+    leftArrow.classList.remove("opacity-100");
+  }
 }
+
+setInterval(() => {
+  if(currentIndx !=totalCards / cardsPerSlide - 1){
+    nextSlide();
+  }else{
+    currentIndx = 0;
+    updateCrousel();
+    rightArrow.classList.remove("opacity-0");  
+  }
+}, 4000);
 
 rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
