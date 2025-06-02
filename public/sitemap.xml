@@ -6,22 +6,22 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 <url>
-    <loc>https://elite-ruby.vercel.app/</loc>
+    <loc>https://www.theeliteinstitute.com/</loc>
     <lastmod>2025-05-21T08:33:51+00:00</lastmod>
   </url>
 
   <url>
-    <loc>https://elite-ruby.vercel.app/about</loc>
+    <loc>https://www.theeliteinstitute.com/about</loc>
     <lastmod>2025-05-21T08:33:51+00:00</lastmod>
   </url>
 
   <url>
-    <loc>https://elite-ruby.vercel.app/courses</loc>
+    <loc>https://www.theeliteinstitute.com/courses</loc>
     <lastmod>2025-05-21T08:33:51+00:00</lastmod>
   </url>
 
   <url>
-    <loc>https://elite-ruby.vercel.app/contact</loc>
+    <loc>https://www.theeliteinstitute.com/contact</loc>
     <lastmod>2025-05-21T08:33:51+00:00</lastmod>
   </url>
 </urlset>
