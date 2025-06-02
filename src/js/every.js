@@ -14,3 +14,6 @@ function closeSidebar() {
 
 open.addEventListener("click", openSidebar);
 close.addEventListener("click", closeSidebar);
+
+
+

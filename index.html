@@ -13,7 +13,9 @@
     />
 
     <!-- SEO starts here  -->
-    <title>Elite Computer Institute | Top IT & Computer Courses in Delhi</title>
+    <title>
+      Elite Computer Institute | Top IT & Computer Institute in Delhi
+    </title>
     <meta
       name="description"
       content="Elite Computer Institute in Delhi offers certified courses in Management Information System, Digital Computer Teacher Training, E-accounting and Taxation, English Speaking, Computer Application, Office Automation, Video Editing, Graphic Designing, Financial Accounting, Web Designing, Typing & Shorthand, and crash courses. Enroll now!"
@@ -84,7 +86,23 @@
       }
     </script>
   </head>
-  <body class="w-full h-auto">
+  <body class="w-full h-auto relative">
+    <!-- sidebar for mobile view -->
+    <div
+      class="w-full fixed right-0 -top-100 bg-primary z-30 overflow-y-hidden flex justify-between items-center gap-3 transition-all duration-500 ease-in-out md:hidden px-4 py-7"
+      id="sidebar"
+    >
+      <ul class="flex flex-col gap-y-3 text-lg text-white">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <i
+        class="ri-close-large-line text-white cursor-pointer text-lg self-start"
+        id="close"
+      ></i>
+    </div>
     <header
       class="w-full h-auto py-3 bg-white border-b border-primary/90 sticky top-0 z-10"
     >
@@ -101,9 +119,11 @@
           />
         </a>
         <ul class="md:flex gap-8 text-lg hidden text-black">
-          <li><a href="/" class="nav-link">Home</a></li>
+          <li class="w-full"><a href="/" class="nav-link">Home</a></li>
           <li><a href="/about" class="nav-link">About</a></li>
-          <li><a href="/courses" class="nav-link">Courses</a></li>
+          <li class="relative w-full group cursor-pointer">
+            <a href="/courses">Courses</a>
+          </li>
           <li><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
         <i
@@ -118,23 +138,6 @@
       </nav>
     </header>
     <main class="w-full h-auto relative">
-      <!-- sidebar for mobile view -->
-      <div
-        class="w-full fixed right-0 -top-100 bg-primary z-30 overflow-y-hidden flex justify-between items-center gap-3 transition-all duration-500 ease-in-out md:hidden px-4 py-7"
-        id="sidebar"
-      >
-        <ul class="flex flex-col gap-y-3 text-lg text-white">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/courses">Courses</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <i
-          class="ri-close-large-line text-white cursor-pointer text-lg self-start"
-          id="close"
-        ></i>
-      </div>
-
       <!-- hero section -->
       <section
         class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-5"
@@ -169,8 +172,8 @@
           <p
             class="sm:text-sm text-xs lg:max-w-2/6 md:max-w-5/6 self-end font-semibold text-white leading-6 italic tracking-widest"
           >
-            Welcome to Elite Computer Institute Delhi's best institute to Start
-            Your Tech Journey...
+            Welcome to Elite Computer Institute Delhi's best computer institute
+            to start your tech journey...
           </p>
         </div>
       </section>
@@ -186,10 +189,11 @@
             At
             <span class="font-semibold text-primary">
               Elite Computer Institute</span
-            >, we offer comprehensive computer training courses designed to
-            equip you with the essential IT and digital skills needed to thrive
-            in today’s competitive job market. Enroll now and start transforming
-            your career with job-oriented computer education.
+            >, we offer comprehensive Computer training courses, Diploma courses
+            & Certification courses designed to equip you with the essential IT
+            and digital skills needed to thrive in today’s competitive job
+            market. Enroll now and start transforming your career with
+            job-oriented computer education.
           </p>
           <!-- enqury form -->
           <form
@@ -216,9 +220,9 @@
       <!-- third section -->
       <section class="w-full sm:pb-18 sm:py-0 pb-7">
         <div
-          class="sm:container sm:mx-auto flex flex-col lg:flex-row gap-x-5 gap-y-4 sm:px-4"
+          class="sm:container sm:mx-auto flex flex-col lg:flex-row justify-start items-start gap-x-5 gap-y-6 sm:px-4"
         >
-          <div class="flex-1">
+          <div class="flex-1 w-full">
             <img
               src="/intro_img.webp"
               alt="Mr. Arun Giri"
@@ -231,7 +235,7 @@
             class="flex-1 flex flex-col justify-center items-start w-full space-y-5 sm:px-0 px-4"
           >
             <h2
-              class="sm:text-5xl text-3xl mb-5 text-pure border-b border-pure pb-5 w-full"
+              class="sm:text-5xl text-3xl mb-5 text-primary border-b border-pure pb-5 w-full"
             >
               The Elite Computer Institute
             </h2>
@@ -239,7 +243,7 @@
               A leading computer training institute in Delhi, committed to
               providing high-quality computer courses that equip students with
               essential IT skills for career success. Since our establishment in
-              2010, we have focused on delivering practical, job-oriented
+              March 2017, we have focused on delivering practical, job-oriented
               training in areas such as office automation, graphic designing,
               web development, accounting software (Tally), and programming
               languages. Our mission is rooted in educational excellence,
@@ -274,31 +278,31 @@
               class="w-full flex sm:flex-row flex-col justify-start items-start gap-4"
             >
               <div
-                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden relative shadow-xl hover:scale-95 transition-all ease-in duration-300"
+                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
               >
                 <div class="flex-1">
-                  <a href="/courses#MIS"
+                  <a href="/courses#DWD"
                     ><img
                       src="/course_img.jpg"
-                      alt="Management Information System"
+                      alt="Diploma in Web Designing &amp; Multimedia"
                       class="w-full h-full"
                   /></a>
                 </div>
                 <div
                   class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
                 >
-                  <a href="/courses#MIS"
+                  <a href="/courses#DWD"
                     ><h2
                       class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
                     >
-                      MIS
+                      DWD
                     </h2></a
                   >
-                  <h2 class="text-xl text-center text-black">
-                    Management Information System
+                  <h2 class="text-xl text-center">
+                    Diploma in Web Designing &amp; Multimedia
                   </h2>
                 </div>
-                <a class="sticky bottom-0" href="/courses#MIS"
+                <a class="sticky bottom-0" href="/courses#DWD"
                   ><button
                     class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
                   >
@@ -306,6 +310,7 @@
                   </button></a
                 >
               </div>
+              
               <div
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden relative shadow-xl hover:scale-95 transition-all ease-in duration-300"
               >
@@ -328,7 +333,7 @@
                     </h2></a
                   >
                   <h2 class="text-xl text-center text-black">
-                    Digital Computer Teacher Training
+                    Diploma in Computer Teacher Training
                   </h2>
                 </div>
                 <a class="sticky bottom-0" href="/courses#DCTT"
@@ -382,37 +387,6 @@
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
               >
                 <div class="flex-1">
-                  <a href="/courses#ESC"
-                    ><img
-                      src="/course_img.jpg"
-                      alt="English Speaking Course"
-                      class="w-full h-full"
-                  /></a>
-                </div>
-                <div
-                  class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
-                >
-                  <a href="/courses#ESC"
-                    ><h2
-                      class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
-                    >
-                      ESC
-                    </h2></a
-                  >
-                  <h2 class="text-xl text-center">English Speaking Course</h2>
-                </div>
-                <a class="sticky bottom-0" href="/courses#ESC"
-                  ><button
-                    class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
-                  >
-                    know More
-                  </button></a
-                >
-              </div>
-              <div
-                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
-              >
-                <div class="flex-1">
                   <a href="/courses#DCA"
                     ><img
                       src="/course_img.jpg"
@@ -435,6 +409,39 @@
                   </h2>
                 </div>
                 <a class="sticky bottom-0" href="/courses#DCA"
+                  ><button
+                    class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
+                  >
+                    know More
+                  </button></a
+                >
+              </div>
+              <div
+                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
+              >
+                <div class="flex-1">
+                  <a href="/courses#DGD"
+                    ><img
+                      src="/course_img.jpg"
+                      alt="Diploma in Graphic Designing"
+                      class="w-full h-full"
+                  /></a>
+                </div>
+                <div
+                  class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
+                >
+                  <a href="/courses#DGD"
+                    ><h2
+                      class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
+                    >
+                      DGD
+                    </h2></a
+                  >
+                  <h2 class="text-xl text-center">
+                    Diploma in Graphic Designing
+                  </h2>
+                </div>
+                <a class="sticky bottom-0" href="/courses#DGD"
                   ><button
                     class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
                   >
@@ -515,38 +522,38 @@
                 >
               </div>
               <div
-                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
-              >
-                <div class="flex-1">
-                  <a href="/courses#DGD"
-                    ><img
-                      src="/course_img.jpg"
-                      alt="Diploma in Graphic Designing"
-                      class="w-full h-full"
-                  /></a>
-                </div>
-                <div
-                  class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
-                >
-                  <a href="/courses#DGD"
-                    ><h2
-                      class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
-                    >
-                      DGD
-                    </h2></a
-                  >
-                  <h2 class="text-xl text-center">
-                    Diploma in Graphic Designing
-                  </h2>
-                </div>
-                <a class="sticky bottom-0" href="/courses#DGD"
-                  ><button
-                    class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
-                  >
-                    know More
-                  </button></a
-                >
+              class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
+            >
+              <div class="flex-1">
+                <a href="/courses#CFA"
+                  ><img
+                    src="/course_img.jpg"
+                    alt="Certification in Financial Accounting"
+                    class="w-full h-full"
+                /></a>
               </div>
+              <div
+                class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
+              >
+                <a href="/courses#CFA"
+                  ><h2
+                    class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
+                  >
+                    CFA
+                  </h2></a
+                >
+                <h2 class="text-xl text-center">
+                  Certification in Financial Accounting
+                </h2>
+              </div>
+              <a class="sticky bottom-0" href="/courses#CFA"
+                ><button
+                  class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
+                >
+                  know More
+                </button></a
+              >
+            </div>
               <div
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
               >
@@ -618,65 +625,33 @@
                   </button></a
                 >
               </div>
+              
               <div
-                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
+                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden relative shadow-xl hover:scale-95 transition-all ease-in duration-300"
               >
                 <div class="flex-1">
-                  <a href="/courses#CFA"
+                  <a href="/courses#MIS"
                     ><img
                       src="/course_img.jpg"
-                      alt="Certification in Financial Accounting"
+                      alt="Management Information System"
                       class="w-full h-full"
                   /></a>
                 </div>
                 <div
                   class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
                 >
-                  <a href="/courses#CFA"
+                  <a href="/courses#MIS"
                     ><h2
                       class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
                     >
-                      CFA
+                      MIS
                     </h2></a
                   >
-                  <h2 class="text-xl text-center">
-                    Certification in Financial Accounting
+                  <h2 class="text-xl text-center text-black">
+                    Management Information System
                   </h2>
                 </div>
-                <a class="sticky bottom-0" href="/courses#CFA"
-                  ><button
-                    class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
-                  >
-                    know More
-                  </button></a
-                >
-              </div>
-              <div
-                class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl"
-              >
-                <div class="flex-1">
-                  <a href="/courses#DWD"
-                    ><img
-                      src="/course_img.jpg"
-                      alt="Diploma in Web Designing &amp; Multimedia"
-                      class="w-full h-full"
-                  /></a>
-                </div>
-                <div
-                  class="flex-1 flex bg-white flex-col text-black justify-center items-center shrink-0 gap-y-6 relative py-6 px-4"
-                >
-                  <a href="/courses#DWD"
-                    ><h2
-                      class="text-2xl bg-primary/10 text-primary text-center px-12 py-1 rounded-full"
-                    >
-                      DWD
-                    </h2></a
-                  >
-                  <h2 class="text-xl text-center">
-                    Diploma in Web Designing &amp; Multimedia
-                  </h2>
-                </div>
-                <a class="sticky bottom-0" href="/courses#DWD"
+                <a class="sticky bottom-0" href="/courses#MIS"
                   ><button
                     class="w-full bg-primary text-white text-lg cursor-pointer py-2 hover:bg-primary/80 duration-200"
                   >
@@ -703,9 +678,9 @@
             Why Choose Us?
           </h2>
           <p
-            class="text-black sm:my-8 my-5 text-center sm:max-w-4/6 mx-auto w-full text-md"
+            class="text-black sm:my-8 my-5 text-center lg:max-w-4/6 mx-auto w-full text-md"
           >
-            At Elite Computer Institute, Delhi, we offer practical and
+            At Elite Computer Institute at Delhi, we offer practical and
             industry-relevant computer training designed to help students master
             essential IT skills such as programming, web development, and
             computer fundamentals. Our experienced instructors provide
