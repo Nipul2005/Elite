@@ -1,6 +1,8 @@
 const sidebar = document.getElementById("sidebar");
 const open = document.getElementById("open");
 const close = document.getElementById("close");
+const floater= document.getElementById("floater");
+
 
 function openSidebar() {
   sidebar.classList.remove("top-1000");
@@ -14,6 +16,5 @@ function closeSidebar() {
 
 open.addEventListener("click", openSidebar);
 close.addEventListener("click", closeSidebar);
-
 
 
