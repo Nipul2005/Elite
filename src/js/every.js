@@ -17,4 +17,8 @@ function closeSidebar() {
 open.addEventListener("click", openSidebar);
 close.addEventListener("click", closeSidebar);
 
+floater.addEventListener("click", (e) => {
+    floater.classList.toggle("-right-25");
+});
+
 
