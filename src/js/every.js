@@ -5,12 +5,12 @@ const floater = document.getElementById("floater");
 let flag = true;
 
 function openSidebar() {
-  sidebar.classList.remove("top-1000");
+  sidebar.classList.remove("-top-50");
   sidebar.classList.add("top-0");
 }
 
 function closeSidebar() {
-  sidebar.classList.add("-top-1000");
+  sidebar.classList.add("-top-50");
   sidebar.classList.remove("top-0");
 }
 
