@@ -209,6 +209,8 @@
           <!-- FORM -->
           <form
             class="w-full flex flex-col justify-start items-start gap-y-4 text-primary"
+            action="https://formsubmit.co/pnipul7678@gmail.com" method="POST"
+            id="form"
           >
             <span
               class="w-full flex sm:flex-row flex-col justify-start items-center gap-x-2 gap-y-4"
@@ -217,11 +219,13 @@
                 type="text"
                 placeholder="Enter your Name*"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+                name="name"
               />
               <input
                 type="number"
                 placeholder="Enter your Mobile Number*"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+                name="number"
               />
             </span>
             <span
@@ -234,6 +238,7 @@
               />
               <select
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-2 cursor-pointer"
+                name="course"
               >
                 <option>Select Course</option>
                 <option>MIS :- Management Information System</option>
@@ -255,6 +260,7 @@
             <textarea
               placeholder="Enter your Message"
               class="w-full p-2 outline-none border border-gray-300 rounded-md px-5"
+              name="message"
             ></textarea>
             <button
               type="submit"
