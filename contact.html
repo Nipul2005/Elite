@@ -103,10 +103,10 @@
       id="sidebar"
     >
       <ul class="flex flex-col gap-y-3 text-lg text-white">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/courses">Courses</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
+        <li><a href="/about" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">About</a></li>
+        <li><a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a></li>
+        <li><a href="/contact" class="text-white underline underline-offset-4 decoration-2">Contact</a></li>
       </ul>
       <i
         class="ri-close-large-line text-white cursor-pointer text-lg self-start"
@@ -129,12 +129,12 @@
           />
         </a>
         <ul class="md:flex gap-8 text-lg hidden text-black">
-          <li class="w-full"><a href="/" class="nav-link">Home</a></li>
-          <li><a href="/about" class="nav-link">About</a></li>
+          <li class="w-full"><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
+          <li><a href="/about" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">About</a></li>
           <li class="relative w-full group cursor-pointer">
-            <a href="/courses">Courses</a>
+            <a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a>
           </li>
-          <li><a href="/contact" class="nav-link">Contact</a></li>
+          <li><a href="/contact" class="text-primary underline underline-offset-4 decoration-2">Contact</a></li>
         </ul>
         <i
           class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
