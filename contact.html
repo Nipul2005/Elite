@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet" />
-    <link rel="icon" type="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="icon" href="/favicon.ico" sizes="32x32" />
 
     <!-- remixicon cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
 
     <!-- SEO starts here  -->
     <title>Contact Us | Elite Computer Institute Delhi</title>
@@ -103,10 +102,34 @@
       id="sidebar"
     >
       <ul class="flex flex-col gap-y-3 text-lg text-white">
-        <li><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
-        <li><a href="/about" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">About</a></li>
-        <li><a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a></li>
-        <li><a href="/contact" class="text-white underline underline-offset-4 decoration-2">Contact</a></li>
+        <li>
+          <a
+            href="/"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/courses"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a
+            href="/contact"
+            class="text-white underline underline-offset-4 decoration-2"
+            >Contact</a
+          >
+        </li>
       </ul>
       <i
         class="ri-close-large-line text-white cursor-pointer text-lg self-start"
@@ -129,12 +152,34 @@
           />
         </a>
         <ul class="md:flex gap-8 text-lg hidden text-black">
-          <li class="w-full"><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
-          <li><a href="/about" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">About</a></li>
-          <li class="relative w-full group cursor-pointer">
-            <a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a>
+          <li class="w-full">
+            <a
+              href="/"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Home</a
+            >
           </li>
-          <li><a href="/contact" class="text-primary underline underline-offset-4 decoration-2">Contact</a></li>
+          <li>
+            <a
+              href="/about"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >About</a
+            >
+          </li>
+          <li class="relative w-full group cursor-pointer">
+            <a
+              href="/courses"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class="text-primary underline underline-offset-4 decoration-2"
+              >Contact</a
+            >
+          </li>
         </ul>
         <i
           class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
@@ -193,7 +238,7 @@
         </div>
 
         <!-- FORM  BOX -->
-        <div class="flex-1">
+        <div class="flex-1 w-full">
           <h2
             class="sm:text-5xl text-3xl mb-5 text-primary border-b border-pure pb-5 w-full"
             style="text-align: left"
@@ -251,6 +296,11 @@
                 </option>
               </select>
             </span>
+            <textarea
+              placeholder="Enter your Message"
+              class="w-full p-2 outline-none border border-gray-300 rounded-lg px-4"
+              name="message"
+            ></textarea>
             <button
               type="submit"
               class="bg-primary sm:w-auto w-full text-white px-12 py-2 rounded-full cursor-pointer self-end hover:bg-primary/80 duration-200"
@@ -462,5 +512,6 @@
       ></a>
     </div>
     <script type="module" src="./src/js/every.js"></script>
+    <script type="module" src="./src/js/form.js"></script>
   </body>
 </html>
