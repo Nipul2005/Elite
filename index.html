@@ -216,11 +216,16 @@
               class="lg:w-2/6 md:w-3/6 w-full border border-gray-300 rounded-full flex justify-between items-center p-1"
             >
               <input
-                type="number"
+                type="text"
                 placeholder="Enter your Mobile Number"
                 class="flex-1 outline-none transition duration-200 ease-in-out px-3"
                 name="phone"
                 required
+                autocomplete="off"
+                maxlength="10"
+                pattern="\d{10}"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                autofocus
               />
               <button
                 class="bg-primary sm:text-md text-sm text-white px-6 py-2 rounded-full cursor-pointer"
@@ -236,13 +241,8 @@
       <!--section of key feature of institute -->
       <section class="w-full sm:pb-18 pb-7">
         <div
-          class="sm:container sm:mx-auto px-4 flex flex-col justify-center items-center gap-y-10"
+          class="sm:container sm:mx-auto px-4 flex flex-col justify-center items-center"
         >
-          <h2
-            class="lg:text-5xl md:text-4xl text-3xl text-primary pb-5 border-b border-primary/30 w-full sm:text-center text-left"
-          >
-            Our Services
-          </h2>
           <div
             class="w-full flex sm:flex-row flex-col justify-between items-center gap-4"
           >
@@ -290,7 +290,7 @@
                   class="ri-presentation-line text-3xl flex justify-center items-center p-3 bg-gradient-to-b from-primary/10 to-primary text-white rounded-full sm:w-20 sm:h-20 w-15 h-15"
                 ></i>
                 <h5 class="sm:text-xl text-lg text-black text-center">
-                  Online Classes
+                  Join Us Now
                 </h5>
               </div>
             </div>
@@ -756,7 +756,7 @@
             class="sm:text-5xl text-3xl mb-5 text-primary border-b border-primary/30 pb-5 w-full"
             style="text-align: center"
           >
-            Why Choose Us?
+            Our Services
           </h2>
           <p
             class="text-black sm:my-8 my-5 text-center lg:max-w-4/6 mx-auto w-full text-md"

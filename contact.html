@@ -260,13 +260,18 @@
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
                 name="name"
                 required
+                autofocus
               />
               <input
-                type="number"
+                type="text"
                 placeholder="Enter your Mobile Number*"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
                 name="phone"
                 required
+                autocomplete="off"
+                maxlength="10"
+                pattern="\d{10}"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');"
               />
             </span>
             <span
@@ -284,7 +289,7 @@
                 required
               >
                 <option>Select Course</option>
-                <option>Any Other</option>
+                <option>Other</option>
                 <option>MIS :- Management Information System</option>
                 <option>DCTT :- Digital Computer Teacher Training</option>
                 <option>DET :- Diploma in E-accounting and Taxation</option>
@@ -296,9 +301,7 @@
                 <option>DTP :- Certification in Desktop Publishing</option>
                 <option>CCO :- Certification in Computer Operating</option>
                 <option>CFA :- Certification in Financial Accounting</option>
-                <option>
-                  DWD :- Diploma in Web Designing & Multimedia
-                </option>
+                <option>DWD :- Diploma in Web Designing & Multimedia</option>
               </select>
             </span>
             <textarea

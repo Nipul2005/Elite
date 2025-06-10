@@ -83,20 +83,20 @@ setInterval(() => {
 (function () {
   // https://dashboard.emailjs.com/admin/account
   emailjs.init({
-    publicKey: "0JXto0xokULVJrV8_",
+    publicKey: "Y0U_5YYlGlnx00jDH",
   });
 })();
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   btn.innerHTML="Sending...";
-  emailjs.sendForm("service_f4cy3qs", "template_004tjtl", this).then(
+  emailjs.sendForm("service_xnl3k4z", "template_srk5fvd", this).then(
     () => {
       alert("Message sent successfully!");
       btn.innerHTML = "Submit";
+      this.reset();
     },
     (err) => {
-      console.log(err);
       alert("Failed to send message.");
       btn.innerHTML = "Submit";
     }
