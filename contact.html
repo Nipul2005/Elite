@@ -259,12 +259,14 @@
                 placeholder="Enter your Name*"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
                 name="name"
+                required
               />
               <input
                 type="number"
                 placeholder="Enter your Mobile Number*"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
                 name="phone"
+                required
               />
             </span>
             <span
@@ -274,12 +276,15 @@
                 type="email"
                 placeholder="Enter your Email"
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-5"
+                name="email"
               />
               <select
                 class="w-full p-2 outline-none border border-gray-300 rounded-full px-2 cursor-pointer"
                 name="course"
+                required
               >
                 <option>Select Course</option>
+                <option>Any Other</option>
                 <option>MIS :- Management Information System</option>
                 <option>DCTT :- Digital Computer Teacher Training</option>
                 <option>DET :- Diploma in E-accounting and Taxation</option>
@@ -292,7 +297,7 @@
                 <option>CCO :- Certification in Computer Operating</option>
                 <option>CFA :- Certification in Financial Accounting</option>
                 <option>
-                  DWD :- Diploma in Web Designing &amp; Multimedia
+                  DWD :- Diploma in Web Designing & Multimedia
                 </option>
               </select>
             </span>
@@ -300,10 +305,12 @@
               placeholder="Enter your Message"
               class="w-full p-2 outline-none border border-gray-300 rounded-lg px-4"
               name="message"
+              name="message"
             ></textarea>
             <button
               type="submit"
               class="bg-primary sm:w-auto w-full text-white px-12 py-2 rounded-full cursor-pointer self-end hover:bg-primary/80 duration-200"
+              id="btn"
             >
               Submit
             </button>

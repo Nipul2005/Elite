@@ -1,14 +1,16 @@
+import emailjs from "@emailjs/browser";
 const featureBoxes = document.getElementById("featureBox");
 const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
 const showMore = document.getElementById("showMore");
 const cards = document.querySelectorAll(".cards");
 const carousel = document.getElementById("carousel");
+const form=document.getElementById("form");
+const btn=document.getElementById("btn");
 
 let currentIndx = 0;
 let cardsPerSlide;
 let totalCards = 12;
-let maxIdx;
 
 showMore.addEventListener("click", () => {
   cards.forEach((card) => {
@@ -75,3 +77,28 @@ setInterval(() => {
   const random = Math.floor(Math.random() * arr.length);
   carousel.src = `/${arr[random]}`;
 }, 4000);
+
+// emailjs publiuc key
+
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init({
+    publicKey: "0JXto0xokULVJrV8_",
+  });
+})();
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  btn.innerHTML="Sending...";
+  emailjs.sendForm("service_f4cy3qs", "template_004tjtl", this).then(
+    () => {
+      alert("Message sent successfully!");
+      btn.innerHTML = "Submit";
+    },
+    (err) => {
+      console.log(err);
+      alert("Failed to send message.");
+      btn.innerHTML = "Submit";
+    }
+  );
+});
