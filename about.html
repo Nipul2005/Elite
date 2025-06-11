@@ -101,10 +101,34 @@
       id="sidebar"
     >
       <ul class="flex flex-col gap-y-3 text-lg text-white">
-        <li><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
-        <li><a href="/about" class="text-white underline underline-offset-4 decoration-2">About</a></li>
-        <li><a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a></li>
-        <li><a href="/contact" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Contact</a></li>
+        <li>
+          <a
+            href="/"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about"
+            class="text-white underline underline-offset-4 decoration-2"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/courses"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a
+            href="/contact"
+            class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >Contact</a
+          >
+        </li>
       </ul>
       <i
         class="ri-close-large-line text-white cursor-pointer text-lg self-start"
@@ -127,19 +151,41 @@
           />
         </a>
         <ul class="md:flex gap-8 text-lg hidden text-black">
-          <li class="w-full"><a href="/" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Home</a></li>
-          <li><a href="/about" class="text-primary underline underline-offset-4 decoration-2">About</a></li>
-          <li class="relative w-full group cursor-pointer">
-            <a href="/courses" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Courses</a>
+          <li class="w-full">
+            <a
+              href="/"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Home</a
+            >
           </li>
-          <li><a href="/contact" class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">Contact</a></li>
+          <li>
+            <a
+              href="/about"
+              class="text-primary underline underline-offset-4 decoration-2"
+              >About</a
+            >
+          </li>
+          <li class="relative w-full group cursor-pointer">
+            <a
+              href="/courses"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Contact</a
+            >
+          </li>
         </ul>
         <i
           class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
           id="open"
         ></i>
         <a
-        href="/contact"
+          href="/contact"
           class="bg-primary text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
         >
           Enroll Now
@@ -182,49 +228,102 @@
         </div>
       </section>
 
-      <section class="w-full sm:pt-18 pt-7">
+      <section class="w-full sm:py-18 py-7 bg-primary text-white">
         <div
-          class="sm:container sm:mx-auto flex flex-col justify-center sm:items-center items-start gap-x-5 gap-y-6 px-4"
+          class="sm:container sm:mx-auto flex sm:flex-row flex-col justify-between items-start gap-x-8 gap-y-6 px-4"
         >
-          <h2 class="lg:text-5xl md:text-4xl text-3xl text-primary text-start">
-            Words from our Founder
-          </h2>
-          <div
-            class="flex flex-col justify-start items-start lg:max-w-5/6 sm:text-start sm:mx-auto w-full bg-primary/5 p-5 rounded-lg"
+          <span
+            class="py-12 bg-white rounded-lg gap-x-3 text-black font-bold flex justify-center items-center text-center sm:w-1/3 w-full"
+            ><i class="ri-award-line text-6xl"></i>
+            <p class="text-2xl">Since 2017</p></span
           >
-            <p class="text-black text-lg">
+
+          <div class="w-full flex flex-col justify-between items-start gap-6">
+            <h2
+              class="w-full lg:text-5xl md:text-4xl text-3xl text-start font-semibold pb-6 relative after:content-[''] after:w-4/6 after:h-1 after:bg-gradient-to-r after:from-white after:rounded-full after:to-primary after:absolute after:bottom-0 after:left-0"
+            >
+              Words from our Founder
+            </h2>
+            <p class="text-lg">
               I feel honoured to introduce myself as the Founder and Managing
               Director of
-              <span class="font-semibold">Elite Computer Institute</span>.
-              Through this, I would like to convey my message to the expert
-              instructors and students, that our Institution will help you by
-              recognizing your strengths and competencies to create a brighter
-              future ahead with us. We motivate and empower our students to be
-              lifelong learners. <br /><br />
-              Our education system is the one that caters the individual needs
-              of our students. We want all our students to achieve their full
-              potential. Success for all students is ensured at our Institution
-              by the delivery of enriching, student centred, structured courses
-              that help the students imbibe and enhance necessary skills. After
-              gaining a decade of experience in the world of News editing and
-              Media field, we started this Institution with the commitment to
-              provide excellence in the field of I.T (Information
-              Technology).<br /><br />
-              Our principles are clearly inclined towards working with
-              innovation, sustainability and commitment. Our organisation not
-              only provides the platform to build a bright professional career
-              in the I.T sector but also provides “placement” opportunities in
-              well-reputed companies.<br /><br />
-              As Computer knowledge has become a primary requirement for
-              everyone, our Institution lays out the finest quality Computer
-              Education in a most reasonable “fee structure” which is easily
-              accessible to all classes of people. I would also like to take
-              this opportunity to welcome prospective students who are planning
-              to enroll themselves with us. We hope to have a fruitful
-              conversation with you.
+              <span class="font-semibold">Elite Computer Institute</span>. I am
+              proud to lead an institution dedicated to empowering students and
+              instructors through quality IT education. With a strong foundation
+              in the media and news editing industry, our goal is to nurture
+              individual strengths and foster lifelong learning. We offer
+              structured, student-centric courses that focus on skill
+              development, career readiness, and job placements in reputed
+              companies. Our mission is rooted in innovation, sustainability,
+              and accessibility—providing top-notch computer education at an
+              affordable fee structure for all. I warmly welcome all prospective
+              students to join us in shaping a successful future.
             </p>
-            <a href="/courses" class="inline-block self-end sm:w-auto w-full text-center px-8 py-2 mt-4 bg-primary rounded-full hover:bg-primary/80 duration-200 ease-in text-white">Explore Our Courses</a>
+            <a
+              href="/courses"
+              class="inline-block self-end sm:w-auto w-full text-center px-8 py-2 mt-4 bg-white rounded-full hover:bg-white/80 duration-200 ease-in text-black text-lg"
+              >Explore Our Courses</a
+            >
           </div>
+        </div>
+      </section>
+
+      <section class="w-full sm:py-18 py-7">
+        <div
+          class="sm:container sm:mx-auto flex sm:flex-row flex-col justify-between items-start gap-6 px-4"
+        >
+          <div class="flex-2 text-black space-y-6">
+            <h2
+              class="w-full text-primary lg:text-5xl md:text-4xl text-3xl text-start font-semibold pb-4 relative after:content-[''] after:w-4/6 after:h-1 after:bg-gradient-to-r after:from-primary after:rounded-full after:to-white after:absolute after:bottom-0 after:left-0"
+            >
+              Our Goal
+            </h2>
+            <p class="text-lg">
+              Our organisation not only provides the platform to build a bright
+              professional career in the I.T sector but also provides
+              “placement” opportunities in well-reputed companies. As Computer
+              knowledge has become a primary requirement for everyone, our
+              Institution lays out the finest quality Computer Education in a
+              most reasonable “fee structure” which is easily accessible to all
+              classes of people.<br /><br />
+              We have received a heavy response from our previous batches and
+              thus, we have decided to enter “online training mode” as well. It
+              helps students achieve a certification program with professional
+              training sitting anywhere in the world that saves their time
+              without compromising the quality of the course.
+            </p>
+          </div>
+          <div class="flex-1 self-stretch">
+            <img src="/intro_img.webp" alt="Arun Giri" class="w-full h-full" />
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-primary text-white">
+        <div
+          class="sm:container sm:mx-auto flex sm:flex-row flex-col justify-between items-start gap-x-6 px-4"
+        > 
+        <span class="flex-1 w-full bg-white px-4 sm:py-18 py-10 text-start flex justify-center items-center shadow-lg">
+          <h2
+            class="lg:text-5xl md:text-4xl text-3xl font-semibold w-full text-primary"
+          >
+            Elite Computer Institute
+          </h2>
+        </span>
+          <p class="flex-2 sm:py-14 py-7 text-lg">
+            I feel honoured to introduce myself as the Founder and Managing Director of ELITE COMPUTER INSTITUTE. Through this, I would like to convey my message to the expert instructors and students, that our Institution will help you by recognizing your strengths and competencies to create a brighter future ahead with us.<br><br>
+            In the coming time, we plan to start fast-track courses for students
+            in the fields of web development, web designing, graphic designing
+            and digital marketing. In addition, we are determined to improve the
+            quality and infrastructure of education according to the standards
+            of the “Global Institutions”.<br><br> Through this message, I would like to
+            convey my message to the expert instructors and students, that Elite
+            computer institute will help you by recognizing your strengths and
+            competencies to create a brighter future ahead with us. I would also
+            like to take this opportunity to welcome prospective students who
+            are planning to enroll themselves with us. We hope to have a
+            fruitful conversation with you.
+          </p>
         </div>
       </section>
 
@@ -233,7 +332,7 @@
           class="sm:container sm:mx-auto flex flex-col justify-center sm:items-center items-start gap-x-5 gap-y-6 px-4"
         >
           <h2
-            class="lg:text-5xl md:text-4xl text-3xl text-primary flex-1 sm:mb-8"
+            class="w-full lg:text-5xl md:text-4xl text-3xl relative text-primary flex-1 font-semibold pb-6 after:content-[''] after:w-4/6 after:h-1 after:bg-gradient-to-r after:from-primary after:rounded-full after:to-white after:absolute after:bottom-0 after:left-0"
           >
             Delhi’s best Computer Institute
           </h2>
@@ -335,7 +434,7 @@
           class="sm:container sm:mx-auto sm:p-10 px-4 py-7 flex flex-col justify-center sm:items-center gap-y-5 sm:max-w-4/6 sm:rounded-lg sm:bg-white/90 bg-white"
         >
           <h5
-            class="sm:text-5xl text-3xl text-primary pb-3 border-b border-black/20 w-full sm:text-center"
+            class="sm:text-5xl text-3xl text-primary pb-3 border-b border-black/20 w-full sm:text-center font-semibold"
           >
             Brighten with Elite
           </h5>
@@ -486,10 +585,6 @@
 
           <!-- social links -->
           <span class="flex gap-2 mt-4 place-self-end"
-            ><i
-              class="ri-linkedin-line w-8 h-8 border border-white/20 flex justify-center items-center text-md hover:border-white transition-all ease cursor-pointer duration-200 hover:rounded-sm"
-              title="Linkedin"
-            ></i
             ><a
               href="https://www.facebook.com/ElitecomputerinstituteMadhuVihar/"
               target="_blank"
