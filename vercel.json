@@ -4,5 +4,14 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/courses", "destination": "/courses.html" }
-  ]  
+
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "missing" }],
+      "destination": "/404.html",
+      "statusCode": 404
+    }
+  ]
 }
