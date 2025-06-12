@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-Allow: /favicon.ico
-Sitemap: https://www.theeliteinstitute.com/sitemap.xml
