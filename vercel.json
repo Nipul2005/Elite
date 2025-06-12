@@ -4,5 +4,9 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/courses", "destination": "/courses.html" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "/notFound.html" }
   ]
 }  
