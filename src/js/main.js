@@ -5,12 +5,14 @@ const rightArrow = document.getElementById("rightArrow");
 const showMore = document.getElementById("showMore");
 const cards = document.querySelectorAll(".cards");
 const carousel = document.getElementById("carousel");
-const form=document.getElementById("form");
-const btn=document.getElementById("btn");
+const form = document.getElementById("form");
+const btn = document.getElementById("btn");
 
 let currentIndx = 0;
 let cardsPerSlide;
 let totalCards = 12;
+
+let id = 0;
 
 showMore.addEventListener("click", () => {
   cards.forEach((card) => {
@@ -71,12 +73,17 @@ setInterval(() => {
 rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
 
-const arr = ["c1.jpeg", "c2.jpg", "c3.jpg", "c4.jpg"];
-
 setInterval(() => {
-  const random = Math.floor(Math.random() * arr.length);
-  carousel.src = `/${arr[random]}`;
-}, 4000);
+  if(carousel.children[id].getAttribute("is") == 1 ){
+    carousel.children[id].setAttribute("is", 0);
+    carousel.children[id].classList.toggle("opacity-0");
+  }else{
+    carousel.children[id].setAttribute("is", 1);
+    carousel.children[id].classList.toggle("opacity-0");
+  }
+
+  id < carousel.children.length - 1 ? id++ : (id = 0);
+}, 2000);
 
 // emailjs publiuc key
 
@@ -89,7 +96,7 @@ setInterval(() => {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  btn.innerHTML="Sending...";
+  btn.innerHTML = "Sending...";
   emailjs.sendForm("service_xnl3k4z", "template_srk5fvd", this).then(
     () => {
       alert("Message sent successfully!");

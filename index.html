@@ -22,6 +22,9 @@
 
     <link rel="canonical" href="https://www.theeliteinstitute.com/" />
 
+    <!-- for crawler -->
+    <meta name="robots" content="index, follow" />
+
     <!-- Open graphs -->
     <meta
       property="og:title"
@@ -199,17 +202,31 @@
       <section
         class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-5"
       >
-        <div class="flex-1 self-stretch overflow-hidden">
-          <div
-            class="w-full h-full flex justify-start items-start overflow-x-auto"
-          >
-            <img
-              src="/c1.jpeg"
-              alt="Elite Computer Institute"
-              class="h-full aspect-square rounded-lg shrink-0"
-              id="carousel"
-            />
-          </div>
+        <div class="flex-1 self-stretch relative" id="carousel">
+          <img
+            src="/c1.jpeg"
+            alt="Elite Computer Institute"
+            class="h-full w-full rounded-lg shrink-0 absolute top-0 left-0 transition-all duration-500 ease-in-out aspect-square"
+            is="1"
+          />
+          <img
+            src="/c2.jpg"
+            alt="Elite Computer Institute"
+            class="h-full w-full rounded-lg shrink-0 absolute top-0 left-0 transition-all duration-500 ease-in-out aspect-square"
+            is="1"
+          />
+          <img
+            src="/c3.jpg"
+            alt="Elite Computer Institute"
+            class="h-full w-full rounded-lg shrink-0 absolute top-0 left-0 transition-all duration-500 ease-in-out aspect-square"
+            is="1"
+          />
+          <img
+            src="/c4.jpg"
+            alt="Elite Computer Institute"
+            class="h-full w-full rounded-lg shrink-0 absolute top-0 left-0 transition-all duration-500 ease-in-out aspect-square"
+            is="1"
+          />
         </div>
         <div
           class="lg:flex-2 flex-1 flex flex-col justify-between items-start self-stretch sm:px-5 px-4 gap-y-20 border border-primary/30 sm:py-10 py-5 rounded-lg bg-primary"
@@ -366,23 +383,23 @@
               The Elite Computer Institute
             </h2>
             <p class="text-lg text-black">
-              The ELITE Computer Institute is one of the most renowned
+              The <span class="text-primary font-semibold">Elite Computer Institute</span> is one of the most renowned
               Institutions in West Delhi that intents to offer career-oriented
               short-term and long-term courses with greater emphasis on
-              “Practical Training” sessions.<br /><br />
+              <span class="font-semibold">Practical Training</span> sessions.<br /><br />
               We indulge our students to excel in various facets of higher
               education with a learning environment. We have built a head-strong
-              career foundation for students in emerging areas of “web
-              development” such as HTML, CSS, MySql, .Net, PHP and many more. We
-              offer specialized Computer Basics, Advanced Excel, Tally, BUSY,
-              Graphic Designing, AutoCAD, Web Designing & Development, Software
-              Development courses, English Speaking courses(basic and advanced
-              levels), Personality Development/Grooming classes etc.<br /><br />
+              career foundation for students in emerging areas of <span class="font-semibold">Web
+              development</span> such as <span class="font-semibold">HTML</span>, <span class="font-semibold">CSS</span>, <span class="font-semibold">MySql</span>, <span class="font-semibold">.Net</span>, <span class="font-semibold">PHP</span> and many more. We
+              offer <span class="font-semibold">Specialized Computer Basics</span>, <span class="font-semibold">Advanced Excel</span>, <span class="font-semibold">Tally</span>, <span class="font-semibold">BUSY</span>,
+            <span class="font-semibold">Graphic Designing</span>, <span class="font-semibold">AutoCAD</span>, <span class="font-semibold">Web Designing & Development</span>, <span class="font-semibold">Software
+              Development courses</span>, English Speaking courses(basic and advanced
+              levels)</span>, <span class="font-semibold">Personality Development/Grooming</span> classes etc.<br /><br />
               In short, Elite is a one-stop hub to acquire all the educational
               requirements you need. After gaining a decade of experience in the
               world of News editing and Media field, we started this Institution
               with the commitment to provide excellence in the field of I.T
-              (Information Technology). Our principles are inclined towards
+              <span class="font-semibold">(Information Technology)</span>. Our principles are inclined towards
               working with innovation, sustainability and commitment.
             </p>
             <a
@@ -576,7 +593,6 @@
                     class="flex-1"
                 /></a>
 
-                
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
                 >
@@ -613,7 +629,6 @@
                     class="flex-1"
                 /></a>
 
-               
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
                 >
@@ -644,7 +659,6 @@
                     class="flex-1"
                 /></a>
 
-                
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
                 >
@@ -675,7 +689,6 @@
                     class="flex-1"
                 /></a>
 
-               
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
                 >
@@ -704,13 +717,13 @@
               <div
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden hover:scale-95 transition-all ease-in duration-300 relative shadow-xl flex flex-col justify-start items-start self-stretch bg-white"
               >
-                  <a href="/courses#CCO"
-                    ><img
-                      src="/course_img.jpg"
-                      alt="Certification in Computer Operating"
-                      class="flex-1"
-                  /></a>
-                
+                <a href="/courses#CCO"
+                  ><img
+                    src="/course_img.jpg"
+                    alt="Certification in Computer Operating"
+                    class="flex-1"
+                /></a>
+
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
                 >
@@ -719,7 +732,8 @@
                       Certification in Computer Operating
                     </h2>
                     <p>
-                      Learn essential computer operations, MS Office, and file management—ideal for beginners and office job seekers.
+                      Learn essential computer operations, MS Office, and file
+                      management—ideal for beginners and office job seekers.
                     </p>
                   </div>
                   <a
@@ -733,12 +747,12 @@
               <div
                 class="flex-1 w-full h-auto shrink-0 cursor-pointer overflow-hidden relative shadow-xl hover:scale-95 transition-all ease-in duration-300 flex flex-col justify-start items-start self-stretch bg-white"
               >
-                  <a href="/courses#MIS"
-                    ><img
-                      src="/course_img.jpg"
-                      alt="Management Information System"
-                      class="flex-1"
-                  /></a>
+                <a href="/courses#MIS"
+                  ><img
+                    src="/course_img.jpg"
+                    alt="Management Information System"
+                    class="flex-1"
+                /></a>
 
                 <div
                   class="flex-1 text-black space-y-3 shrink-0 relative flex flex-col justify-between items-start"
@@ -748,7 +762,9 @@
                       Management Information System
                     </h2>
                     <p>
-                      Master Excel, data analysis, reporting, and business tools with this MIS course—perfect for office, finance, and admin roles.
+                      Master Excel, data analysis, reporting, and business tools
+                      with this MIS course—perfect for office, finance, and
+                      admin roles.
                     </p>
                   </div>
                   <a
