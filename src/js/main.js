@@ -12,8 +12,6 @@ let currentIndx = 0;
 let cardsPerSlide;
 let totalCards = 12;
 
-let id = 0;
-
 showMore.addEventListener("click", () => {
   cards.forEach((card) => {
     card.classList.remove("hidden");
@@ -73,17 +71,22 @@ setInterval(() => {
 rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
 
-setInterval(() => {
-  if(carousel.children[id].getAttribute("is") == 1 ){
-    carousel.children[id].setAttribute("is", 0);
-    carousel.children[id].classList.toggle("opacity-0");
-  }else{
-    carousel.children[id].setAttribute("is", 1);
-    carousel.children[id].classList.toggle("opacity-0");
-  }
+// hero carousel js
+let totalImg = carousel.children.length;
+let idx = 0;
 
-  id < carousel.children.length - 1 ? id++ : (id = 0);
-}, 2000);
+function heroCarousel() {
+  carousel.style.transform = `translateX(-${idx * 100}%)`;
+}
+
+function heroNext() {
+  idx = (idx + 1) % totalImg;
+  heroCarousel();
+}
+
+setInterval(() => {
+  heroNext();
+}, 2500);
 
 // emailjs publiuc key
 
