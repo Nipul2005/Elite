@@ -5,7 +5,11 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/courses", "destination": "/courses.html" },
-    { "source": "/courses/course", "destination": "/courses/course.html" },
+    { "source": "/courses/cco", "destination": "/courses/cco.html" },
+    { "source": "/courses/cfa", "destination": "/courses/cfa.html" },
+    { "source": "/courses/coa", "destination": "/courses/coa.html" },
+    { "source": "/courses/cve", "destination": "/courses/cve.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+ 
