@@ -1,15 +1,53 @@
-
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/courses", "destination": "/courses.html" },
-    { "source": "/courses/cco", "destination": "/courses/cco.html" },
-    { "source": "/courses/cfa", "destination": "/courses/cfa.html" },
-    { "source": "/courses/coa", "destination": "/courses/coa.html" },
-    { "source": "/courses/cve", "destination": "/courses/cve.html" },
+    {
+      "source": "/courses/Diploma-Computer-Teacher-Training-in-delhi",
+      "destination": "/courses/dctt.html"
+    },
+    {
+      "source": "/courses/Diploma-E-accounting-and-Taxation-in-delhi",
+      "destination": "/courses/det.html"
+    },
+    {
+      "source": "/courses/Diploma-Computer-Application-in-delhi",
+      "destination": "/courses/dca.html"
+    },
+    {
+      "source": "/courses/Diploma-Graphic-Designing-in-delhi",
+      "destination": "/courses/dgd.html"
+    },
+    {
+      "source": "/courses/Diploma-Web-Designing-Multimedia-in-delhi",
+      "destination": "/courses/dwd.html"
+    },
+    {
+      "source": "/courses/Certification-Office-Automation-in-delhi",
+      "destination": "/courses/coa.html"
+    },
+    {
+      "source": "/courses/Certification-Desktop-Publishing-in-delhi",
+      "destination": "/courses/dtp.html"
+    },
+    {
+      "source": "/courses/Certification-Computer-Operating-in-delhi",
+      "destination": "/courses/cco.html"
+    },
+    {
+      "source": "/courses/Certification-Video-Editing-in-delhi",
+      "destination": "/courses/cve.html"
+    },
+    {
+      "source": "/courses/Certification-Financial-Accounting-in-delhi",
+      "destination": "/courses/cfa.html"
+    },
+    {
+      "source": "/courses/Management-Information-System-in-delhi",
+      "destination": "/courses/mis.html"
+    },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
- 
