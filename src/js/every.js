@@ -32,14 +32,18 @@ floater.addEventListener("click", (e) => {
 });
 
 exParent.addEventListener("click", () => {
+  console.log("clicked");
   exCourses.classList.add("py-3", "h-auto", "shadow-xl", "opacity-100");
   exCourses.classList.remove("h-0", "opacity-0");
 });
 exParent.addEventListener("mouseover", () => {
+  console.log("hovered");
   exCourses.classList.add("py-3", "h-auto", "shadow-xl");
   exCourses.classList.remove("h-0", "opacity-0");
 });
 exParent.addEventListener("mouseleave", () => {
-  exCourses.classList.remove("h-auto", "shadow-xl", "opacity-100");
+  console.log("mouseleave");
+  exCourses.classList.remove("h-auto", "shadow-xl", "opacity-100", "py-3");
   exCourses.classList.add("opacity-0", "h-0");
 });
+ 
