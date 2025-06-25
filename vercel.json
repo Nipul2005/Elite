@@ -6,47 +6,47 @@
     { "source": "/courses", "destination": "/courses.html" },
     {
       "source": "/courses/Diploma-Computer-Teacher-Training-in-delhi",
-      "destination": "/courses/dctt.html"
+      "destination": "/courses/Diploma-Computer-Teacher-Training-in-delhi.html"
     },
     {
       "source": "/courses/Diploma-E-accounting-and-Taxation-in-delhi",
-      "destination": "/courses/det.html"
+      "destination": "/courses/Diploma-E-accounting-and-Taxation-in-delhi.html"
     },
     {
       "source": "/courses/Diploma-Computer-Application-in-delhi",
-      "destination": "/courses/dca.html"
+      "destination": "/courses/Diploma-Computer-Application-in-delhi.html"
     },
     {
       "source": "/courses/Diploma-Graphic-Designing-in-delhi",
-      "destination": "/courses/dgd.html"
+      "destination": "/courses/Diploma-Graphic-Designing-in-delhi.html"
     },
     {
       "source": "/courses/Diploma-Web-Designing-Multimedia-in-delhi",
-      "destination": "/courses/dwd.html"
+      "destination": "/courses/Diploma-Web-Designing-Multimedia-in-delhi.html"
     },
     {
       "source": "/courses/Certification-Office-Automation-in-delhi",
-      "destination": "/courses/coa.html"
+      "destination": "/courses/Certification-Office-Automation-in-delhi.html"
     },
     {
       "source": "/courses/Certification-Desktop-Publishing-in-delhi",
-      "destination": "/courses/dtp.html"
+      "destination": "/courses/Certification-Desktop-Publishing-in-delhi.html"
     },
     {
       "source": "/courses/Certification-Computer-Operating-in-delhi",
-      "destination": "/courses/cco.html"
+      "destination": "/courses/Certification-Computer-Operating-in-delhi.html"
     },
     {
       "source": "/courses/Certification-Video-Editing-in-delhi",
-      "destination": "/courses/cve.html"
+      "destination": "/courses/Certification-Video-Editing-in-delhi.html"
     },
     {
       "source": "/courses/Certification-Financial-Accounting-in-delhi",
-      "destination": "/courses/cfa.html"
+      "destination": "/courses/Certification-Financial-Accounting-in-delhi.html"
     },
     {
       "source": "/courses/Management-Information-System-in-delhi",
-      "destination": "/courses/mis.html"
+      "destination": "/courses/Management-Information-System-in-delhi.html"
     }
   ]
 }
