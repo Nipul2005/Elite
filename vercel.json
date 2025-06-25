@@ -47,7 +47,6 @@
     {
       "source": "/courses/Management-Information-System-in-delhi",
       "destination": "/courses/mis.html"
-    },
-    { "source": "/(.*)", "destination": "/index.html" }
+    }
   ]
 }
