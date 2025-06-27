@@ -101,197 +101,196 @@
     <header
       class="w-full h-auto py-3 bg-white border-b border-primary/90 sticky top-0 z-10"
     >
-        <nav
-          class="sm:container sm:mx-auto flex justify-between items-center px-4 relative"
+      <nav
+        class="sm:container sm:mx-auto flex justify-between items-center px-4 relative"
+      >
+        <a href="/">
+          <img
+            src="/eliteLogo.png"
+            alt="Elite Computer Institute"
+            class="sm:w-54 w-40"
+            loading="lazy"
+            title="Elite Computer Institute"
+          />
+        </a>
+        <ul class="md:flex gap-8 text-lg hidden text-black">
+          <li class="w-full">
+            <a
+              href="/"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >About</a
+            >
+          </li>
+          <li class="w-full cursor-pointer" id="ex-parent">
+            Courses
+            <div
+              id="ex-courses"
+              class="absolute w-full h-0 overflow-hidden bg-white px-10 md:flex justify-between items-start text-black gap-y-2 gap-x-5 transition-all duration-400 ease-in-out shadow-xl rounded-b-lg left-0 top-15 hidden opacity-0"
+            >
+              <span
+                class="w-full flex flex-col justify-between items-start gap-y-4"
+              >
+                <h4
+                  class="text-2xl font-semibold text-primary border-b w-full pb-2"
+                >
+                  Our Diploma Courses
+                </h4>
+                <ul class="flex flex-col gap-y-2 w-full">
+                  <li>
+                    <a
+                      class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                      href="/courses/Diploma-Computer-Teacher-Training-in-delhi"
+                      >Diploma in Computer Teacher Training</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
+                      href="/courses/Diploma-E-accounting-and-Taxation-in-delhi"
+                      >Diploma in E-accounting and Taxation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
+                      href="/courses/Diploma-Computer-Application-in-delhi"
+                      >Diploma in Computer Application</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
+                      href="/courses/Diploma-Graphic-Designing-in-delhi"
+                      >Diploma in Graphic Designing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                      href="/courses/Diploma-Web-Designing-Multimedia-in-delhi"
+                      >Diploma in Web Designing & Multimedia</a
+                    >
+                  </li>
+                </ul>
+              </span>
+              <span
+                class="w-full flex flex-col justify-between items-start gap-y-4"
+              >
+                <h4
+                  class="text-2xl font-semibold text-primary border-b w-full pb-2"
+                >
+                  Our Certification Courses
+                </h4>
+                <ul class="flex gap-x-4 w-full">
+                  <span class="flex flex-col gap-2 w-full">
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Certification-Office-Automation-in-delhi"
+                        >Certification in Office Automation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Certification-Desktop-Publishing-in-delhi"
+                        >Certification in Desktop Publishing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Certification-Computer-Operating-in-delhi"
+                        >Certification in Computer Operating</a
+                      >
+                    </li>
+                  </span>
+                  <span class="flex flex-col gap-4 w-full">
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Certification-Video-Editing-in-delhi"
+                        >Certification in Video Editing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Certification-Financial-Accounting-in-delhi"
+                        >Certification in Financial Accounting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
+                        href="/courses/Management-Information-System-in-delhi"
+                        >Certification in Management of Information System</a
+                      >
+                    </li>
+                  </span>
+                </ul>
+              </span>
+            </div>
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <i
+          class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
+          id="open"
+        ></i>
+        <a
+          href="/contact"
+          class="bg-primary text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
         >
-          <a href="/">
-            <img
-              src="/eliteLogo.png"
-              alt="Elite Computer Institute"
-              class="sm:w-54 w-40"
-              loading="lazy"
-              title="Elite Computer Institute"
-            />
-          </a>
-          <ul class="md:flex gap-8 text-lg hidden text-black">
-            <li class="w-full">
-              <a
-                href="/"
-                class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="/about"
-                class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
-                >About</a
-              >
-            </li>
-            <li class="w-full cursor-pointer" id="ex-parent">
-              Courses
-              <div
-                id="ex-courses"
-                class="absolute w-full h-0 overflow-hidden bg-white px-10 md:flex justify-between items-start text-black gap-y-2 gap-x-5 transition-all duration-400 ease-in-out shadow-xl rounded-b-lg left-0 top-15 hidden opacity-0"
-              >
-                <span
-                  class="w-full flex flex-col justify-between items-start gap-y-4"
-                >
-                  <h4
-                    class="text-2xl font-semibold text-primary border-b w-full pb-2"
-                  >
-                    Our Diploma Courses
-                  </h4>
-                  <ul class="flex flex-col gap-y-2 w-full">
-                    <li>
-                      <a
-                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                        href="/courses/Diploma-Computer-Teacher-Training-in-delhi"
-                        >Diploma in Computer Teacher Training</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
-                        href="/courses/Diploma-E-accounting-and-Taxation-in-delhi"
-                        >Diploma in E-accounting and Taxation</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
-                        href="/courses/Diploma-Computer-Application-in-delhi"
-                        >Diploma in Computer Application</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="inline-block w-full py-2 border-b h-auto text-black px-4 border-primary/20 hover:bg-primary/20 cursor-pointer duration-200"
-                        href="/courses/Diploma-Graphic-Designing-in-delhi"
-                        >Diploma in Graphic Designing</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                        href="/courses/Diploma-Web-Designing-Multimedia-in-delhi"
-                        >Diploma in Web Designing & Multimedia</a
-                      >
-                    </li>
-                  </ul>
-                </span>
-                <span
-                  class="w-full flex flex-col justify-between items-start gap-y-4"
-                >
-                  <h4
-                    class="text-2xl font-semibold text-primary border-b w-full pb-2"
-                  >
-                    Our Certification Courses
-                  </h4>
-                  <ul class="flex gap-x-4 w-full">
-                    <span class="flex flex-col gap-2 w-full">
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Certification-Office-Automation-in-delhi"
-                          >Certification in Office Automation</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Certification-Desktop-Publishing-in-delhi"
-                          >Certification in Desktop Publishing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Certification-Computer-Operating-in-delhi"
-                          >Certification in Computer Operating</a
-                        >
-                      </li>
-                    </span>
-                    <span class="flex flex-col gap-4 w-full">
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Certification-Video-Editing-in-delhi"
-                          >Certification in Video Editing</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Certification-Financial-Accounting-in-delhi"
-                          >Certification in Financial Accounting</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="inline-block w-full py-2 border-b border-primary/20 h-auto text-black px-4 hover:bg-primary/20 cursor-pointer duration-200"
-                          href="/courses/Management-Information-System-in-delhi"
-                          >Certification in Management of Information System</a
-                        >
-                      </li>
-                    </span>
-                  </ul>
-                </span>
-              </div>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <i
-            class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
-            id="open"
-          ></i>
-          <a
-            href="/contact"
-            class="bg-primary text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
-          >
-            Enroll Now
-          </a>
-        </nav>
+          Enroll Now
+        </a>
+      </nav>
     </header>
     <main class="w-full h-auto relative">
       <!-- hero section -->
+
       <section
-        class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-5"
+        class="w-full h-[80vh] relative flex md:flex-row flex-col-reverse justify-start items-center"
       >
-        <div class="flex-1 self-stretch flex justify-end items-center">
-          <img
-            src="/course_img.jpg"
-            alt="Elite Computer Institute"
-            class="w-full h-full rounded-lg"
-          />
-        </div>
         <div
-          class="lg:flex-2 flex-1 flex flex-col justify-between items-start self-stretch sm:px-5 px-4 gap-y-20 border border-primary/30 sm:py-10 py-5 rounded-lg bg-primary"
+          class="md:absolute md:left-0 md:bottom-0 lg:max-w-6/12 md:max-w-8/12 w-full flex flex-col justify-between items-start sm:px-5 px-4 sm:py-10 py-5 md:rounded-tr-full md:rounded-br-full md:bg-white md:gap-y-20 gap-y-10 z-10 md:-mb-7 text-pure"
         >
-          <div
-            class="flex flex-col justify-start items-start gap-y-3 text-white"
-          >
-            <h2
-              class="sm:text-lg text-white text-sm tracking-wider font-semibold"
-            >
+          <div class="flex flex-col justify-start items-start gap-y-3">
+            <h2 class="sm:text-lg text-sm tracking-wider font-semibold">
               Explore The Wide Range of Courses at
             </h2>
-            <h1 class="lg:text-8xl md:text-7xl text-5xl sm:max-w-5/6 w-full">
-              Elite Computer Institute
+            <h1 class="md:text-6xl text-5xl w-full lg:leading-15 text-primary">
+              Elite <br />
+              Computer Institute
             </h1>
           </div>
           <p
-            class="sm:text-sm text-xs lg:max-w-2/6 md:max-w-5/6 self-end font-semibold text-white leading-6 italic tracking-widest"
+            class="text-sm lg:max-w-3/6 md:max-w-5/6 max-w-5/6 self-start font-semibold leading-6 italic tracking-widest"
           >
-            From beginner to advanced, find the perfect course to boost your
-            skills and career at Elite Computer Institute.
+          From beginner to advanced, find the perfect course to boost your
+          skills and career at Elite Computer Institute.
           </p>
+        </div>
+        <div class="w-full h-full relative overflow-hidden">
+          <img
+            src="/course_img.jpg"
+            alt="Elite Computer Institute"
+            class="h-full w-full shrink-0 md:mask-b-from-40%"
+            loading="lazy"
+          />
         </div>
       </section>
 

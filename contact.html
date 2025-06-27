@@ -140,7 +140,7 @@
       ></i>
     </div>
     <header
-      class="w-full h-auto py-3 bg-white border-b border-primary/90 sticky top-0 z-10"
+      class="w-full h-auto py-3 bg-white border-b border-primary/90 sticky top-0 z-20"
     >
       <nav
         class="sm:container sm:mx-auto flex justify-between items-center px-4 relative"
@@ -297,35 +297,33 @@
     <main class="w-full h-auto relative">
       <!-- hero section  -->
       <section
-        class="w-full sm:container sm:mx-auto bg-white flex sm:flex-row flex-col justify-between items-start border-b border-primary/20 sm:py-18 py-7 gap-y-5 px-4 sm:gap-x-5"
+        class="w-full h-[80vh] relative flex md:flex-row flex-col-reverse justify-start items-center"
       >
-        <div class="flex-1 self-stretch flex justify-end items-center">
-          <img
-            src="/contact.jpeg"
-            alt="Elite Computer Institute"
-            class="w-full h-full rounded-lg"
-          />
-        </div>
         <div
-          class="lg:flex-2 flex-1 flex flex-col justify-between items-start self-stretch sm:px-5 px-4 gap-y-20 border border-primary/30 sm:py-10 py-5 rounded-lg bg-primary"
+          class="md:absolute md:left-0 md:bottom-0 lg:max-w-6/12 md:max-w-8/12 w-full flex flex-col justify-between items-start sm:px-5 px-4 sm:py-10 py-5 md:rounded-tr-full md:rounded-br-full md:bg-white md:gap-y-20 gap-y-10 z-10 md:-mb-7 text-pure"
         >
-          <div
-            class="flex flex-col justify-start items-start gap-y-3 text-white"
-          >
-            <h2
-              class="sm:text-lg text-white text-sm tracking-wider font-semibold"
-            >
+          <div class="flex flex-col justify-start items-start gap-y-3">
+            <h2 class="sm:text-lg text-sm tracking-wider font-semibold">
               Get in Touch with
             </h2>
-            <h1 class="lg:text-8xl md:text-7xl text-5xl sm:max-w-5/6 w-full">
-              Elite Computer Institute
+            <h1 class="md:text-6xl text-5xl w-full lg:leading-15 text-primary">
+              The Elite <br />
+              Computer Institute
             </h1>
           </div>
           <p
-            class="sm:text-sm text-xs lg:max-w-2/6 md:max-w-5/6 self-end font-semibold text-white leading-6 italic tracking-widest"
+            class="text-sm lg:max-w-3/6 md:max-w-5/6 max-w-5/6 self-start font-semibold leading-6 italic tracking-widest"
           >
             We're here to help you on your learning journey. Contact us today!
           </p>
+        </div>
+        <div class="w-full h-full relative overflow-hidden">
+          <img
+            src="/contact.jpeg"
+            alt="Elite Computer Institute"
+            class="h-full w-full shrink-0 md:mask-b-from-25% object-left"
+            loading="lazy"
+          />
         </div>
       </section>
 

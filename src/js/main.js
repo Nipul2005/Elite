@@ -115,8 +115,8 @@ form.addEventListener("submit", function (e) {
 });
 
 
-hero.style.height = `${document.documentElement.clientHeight / 20}em`;
+// hero.style.height = `${document.documentElement.clientHeight / 20}em`;
 
-window.addEventListener("resize", () => {
-  hero.style.height = `${document.documentElement.clientHeight / 20}em`;
-});
+// window.addEventListener("resize", () => {
+//   hero.style.height = `${document.documentElement.clientHeight / 20}em`;
+// });
