@@ -7,6 +7,7 @@ const cards = document.querySelectorAll(".cards");
 const carousel = document.getElementById("carousel");
 const form = document.getElementById("form");
 const btn = document.getElementById("btn");
+const scroller = document.getElementById("scroller");
 
 let currentIndx = 0;
 let cardsPerSlide;
@@ -72,21 +73,21 @@ rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
 
 // hero carousel js
-let totalImg = carousel.children.length;
+let totalImg = carousel?.children.length;
 let idx = 0;
 
-function heroCarousel() {
-  carousel.style.transform = `translateX(-${idx * 100}%)`;
-}
+// function heroCarousel() {
+//   carousel.style.transform = `translateX(-${idx * 100}%)`;
+// }
 
-function heroNext() {
-  idx = (idx + 1) % totalImg;
-  heroCarousel();
-}
+// function heroNext() {
+//   idx = (idx + 1) % totalImg;
+//   heroCarousel();
+// }
 
-setInterval(() => {
-  heroNext();
-}, 2500);
+// setInterval(() => {
+//   heroNext();
+// }, 2500);
 
 // emailjs publiuc key
 
@@ -111,4 +112,11 @@ form.addEventListener("submit", function (e) {
       btn.innerHTML = "Submit";
     }
   );
+});
+
+
+scroller.style.height = `${document.documentElement.clientHeight / 22}em`;
+
+window.addEventListener("resize", () => {
+  scroller.style.height = `${document.documentElement.clientHeight / 22}em`;
 });
