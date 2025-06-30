@@ -84,12 +84,6 @@ MobileExParent.addEventListener("click", () => {
   }
 });
 
-
-// MobileExParent.addEventListener("mouseover", () => {
-//   MobileExCourses.classList.add("py-2", "h-auto", "opacity-100");
-//   MobileExCourses.classList.remove("h-0", "opacity-0");
-// });
-
 MobileExParent.addEventListener("mouseleave", () => {
   MobileExCourses.classList.remove("h-auto", "opacity-100", "py-2");
   MobileExCourses.classList.add("opacity-0", "h-0");
