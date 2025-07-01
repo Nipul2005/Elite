@@ -1,12 +1,10 @@
-import emailjs from "@emailjs/browser";
 const featureBoxes = document.getElementById("featureBox");
 const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
 const showMore = document.getElementById("showMore");
 const cards = document.querySelectorAll(".cards");
 const carousel = document.getElementById("carousel");
-const form = document.getElementById("form");
-const btn = document.getElementById("btn");
+
 const hero = document.getElementById("hero");
 
 let currentIndx = 0;
@@ -89,34 +87,3 @@ setInterval(() => {
   heroNext();
 }, 4000);
 
-// emailjs publiuc key
-
-(function () {
-  // https://dashboard.emailjs.com/admin/account
-  emailjs.init({
-    publicKey: "Y0U_5YYlGlnx00jDH",
-  });
-})();
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  btn.innerHTML = "Sending...";
-  emailjs.sendForm("service_xnl3k4z", "template_srk5fvd", this).then(
-    () => {
-      alert("Message sent successfully!");
-      btn.innerHTML = "Submit";
-      this.reset();
-    },
-    (err) => {
-      alert("Failed to send message.");
-      btn.innerHTML = "Submit";
-    }
-  );
-});
-
-
-// hero.style.height = `${document.documentElement.clientHeight / 20}em`;
-
-// window.addEventListener("resize", () => {
-//   hero.style.height = `${document.documentElement.clientHeight / 20}em`;
-// });
