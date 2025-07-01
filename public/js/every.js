@@ -12,6 +12,7 @@ const MobileExParent = document.getElementById("mobile-ex-parent");
 const MobileExCourses = document.getElementById("mobile-ex-courses");
 let flag = true;
 let mobileFlag = true;
+let desktopFlag = true;
 
 function openSidebar() {
   sidebar.classList.remove("-top-50");
@@ -39,19 +40,20 @@ floater.addEventListener("click", (e) => {
 });
 
 exParent.addEventListener("click", () => {
-  exCourses.classList.add(
-    "py-3",
-    "h-auto",
-    "shadow-xl",
-    "opacity-100",
-    "border",
-    "border-primary/40"
-  );
-  exCourses.classList.remove("h-0", "opacity-0");
+  if (desktopFlag) {
+    exCourses.classList.add("py-2", "h-auto", "opacity-100");
+    exCourses.classList.remove("h-0", "opacity-0");
+    desktopFlag = false;
+  } else {
+    exCourses.classList.remove("h-auto", "opacity-100", "py-2");
+    exCourses.classList.add("opacity-0", "h-0");
+    desktopFlag = true;
+  }
 });
-exParent.addEventListener("mouseover", () => {
+
+exParent.addEventListener("mouseenter", () => {
   exCourses.classList.add(
-    "py-3",
+    "py-2",
     "h-auto",
     "shadow-xl",
     "border",
@@ -61,10 +63,10 @@ exParent.addEventListener("mouseover", () => {
 });
 exParent.addEventListener("mouseleave", () => {
   exCourses.classList.remove(
+    "py-2",
     "h-auto",
     "shadow-xl",
     "opacity-100",
-    "py-3",
     "border",
     "border-primary/40"
   );

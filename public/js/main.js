@@ -85,5 +85,5 @@ function heroNext() {
 
 setInterval(() => {
   heroNext();
-}, 4000);
+}, 3000);
 
