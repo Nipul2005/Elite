@@ -10,7 +10,6 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         about: resolve(__dirname, "about.html"),
         contact: resolve(__dirname, "contact.html"),
-        courses: resolve(__dirname, "courses.html"),
         "courses/Diploma-Computer-Teacher-Training-in-delhi": resolve(
           __dirname,
           "courses/Diploma-Computer-Teacher-Training-in-delhi.html"
