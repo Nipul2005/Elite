@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+https://theeliteinstitute.com/sitemap.xml
