@@ -466,30 +466,37 @@
       </section>
 
       <!-- second section -->
-      <section class="w-full sm:py-18 py-7">
+      <section class="w-full sm:py-18 pb-7">
         <div
-          class="sm:container sm:mx-auto px-4 flex flex-col justify-center items-center"
+          class="sm:container sm:mx-auto px-4 flex md:flex-row flex-col justify-center items-center gap-6"
         >
-          <p
-            class="sm:text-center sm:max-w-5/6 sm:leading-10 sm:text-xl text-lg text-black"
-          >
-            Looking for the best computer institute in Delhi ?
-            <span class="font-semibold text-primary">
-              The Elite Computer Institute</span
+          <div class="flex-2 w-full space-y-5">
+            <h2
+              class="w-full lg:text-5xl md:text-4xl text-3xl text-start border-b border-primary pb-4 md:leading-15 leading-10"
             >
-            is the one-stop destination for computer education in Delhi. that
-            offer wide range of job oriented computer courses including
-            Certification courses, Diploma courses and Crash courses, after
-            completion earn your certificate and you'll be able to recieve our
-            placements assistence and get placed on top job roles.
-          </p>
+              Looking for a <br />
+              Computer Institute in Delhi ?
+            </h2>
+            <p class="w-full text-black text-lg">
+              <span class="font-semibold text-primary">
+                The Elite Computer Institute</span
+              >
+              is the one-stop destination for computer education in Delhi. That
+              offer wide range of job oriented computer courses including
+              Certification courses, Diploma courses and Crash courses.<br/><br/>After
+              completion earn your certificate and you'll be able to recieve our
+              placements assistence and get placed on top job roles.
+            </p>
+          </div>
+
           <!-- enqury form -->
           <form
-            class="w-full flex flex-col sm:flex-row gap-4 sm:mt-10 mt-5 justify-center items-center"
+            class="flex-1 w-full flex flex-col gap-4 justify-center items-center self-stretch"
             id="form"
           >
+
             <div
-              class="lg:w-2/6 md:w-3/6 w-full border border-gray-300 rounded-full flex justify-between items-center p-1"
+              class="w-full border border-pure/20 rounded-full flex justify-between items-center pl-1 pr-3 py-2"
             >
               <input
                 type="text"
@@ -502,13 +509,13 @@
                 pattern="\d{10}"
                 oninput="this.value = this.value.replace(/[^0-9]/g, '');"
               />
-              <button
-                class="bg-primary sm:text-md text-sm text-white px-6 py-2 rounded-full cursor-pointer"
-                id="btn"
-              >
-                Enquiry Now
-              </button>
             </div>
+            <button
+              class="bg-primary w-full text-white px-6 py-2 rounded-full cursor-pointer hover:bg-primary/80 transition-all duration-300 ease-in-out"
+              id="btn"
+            >
+              Enquiry Now
+            </button>
           </form>
         </div>
       </section>
@@ -603,7 +610,7 @@
             </p>
             <a
               href="/about"
-              class="border sm:w-auto px-12 sm:py-3 py-2 self-end sm:mt-10 w-full text-center rounded-xl hover:bg-primary hover:text-white sm:text-xl duration-200 text-lg"
+              class="border sm:w-auto px-12 sm:py-3 py-2 self-end sm:mt-10 w-full text-center rounded-full hover:bg-primary hover:text-white sm:text-xl duration-200 text-lg hover:border-primary"
               >Know More...</a
             >
           </div>
