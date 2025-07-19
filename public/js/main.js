@@ -100,9 +100,13 @@ carousel.addEventListener("mousedown", (e) => {
   handleSwipe(e.clientX);
 });
 
-carousel.addEventListener("touchstart", (e) => {
-  handleSwipe(e.touches[0].clientX);
-});
+carousel.addEventListener(
+  "touchstart",
+  (e) => {
+    handleSwipe(e.touches[0].clientX);
+  },
+  { passive: true }
+);
 
 function handleSwipe(endX) {
   const mainWidth = document.body.clientWidth;
