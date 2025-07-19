@@ -20,6 +20,7 @@ showMore.addEventListener("click", () => {
   showMore.classList.add("hidden");
 });
 
+// cards js
 function updateCrousel() {
   const translateX = -currentIndx * 100;
   featureBoxes.style.transform = `translateX(${translateX}%)`;
@@ -70,6 +71,8 @@ setInterval(() => {
 rightArrow.addEventListener("click", nextSlide);
 leftArrow.addEventListener("click", prevSlide);
 
+// cards js end
+
 // hero carousel js
 let totalImg = carousel?.children.length;
 let idx = 0;
@@ -82,8 +85,34 @@ function heroNext() {
   idx = (idx + 1) % totalImg;
   heroCarousel();
 }
+function heroPrev() {
+  idx = (idx - 1) % totalImg;
+  heroCarousel();
+}
 
-setInterval(() => {
-  heroNext();
-}, 3000);
+// setInterval(() => {
+//   heroNext();
+// }, 3000);
 
+// hero carousel end here js
+
+// carousel swiping js
+let startX = 0;
+let isTouch = false;
+
+carousel.addEventListener("mousedown", (e) => {
+  isTouch = true;
+  handleSwipe(e.clientX);
+});
+
+function handleSwipe(endX) {
+  const mainWidth = document.body.clientWidth;
+  const swipeTo = endX > mainWidth / 2 ? true : false;
+
+  console.log(swipeTo);
+  if (swipeTo) {
+    heroNext();
+  } else {
+    heroPrev();
+  }
+}
