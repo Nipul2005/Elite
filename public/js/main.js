@@ -90,26 +90,23 @@ function heroPrev() {
   heroCarousel();
 }
 
-// setInterval(() => {
-//   heroNext();
-// }, 3000);
-
+setInterval(() => {
+  heroNext();
+}, 5000);
 // hero carousel end here js
 
 // carousel swiping js
-let startX = 0;
-let isTouch = false;
-
 carousel.addEventListener("mousedown", (e) => {
-  isTouch = true;
   handleSwipe(e.clientX);
+});
+
+carousel.addEventListener("touchstart", (e) => {
+  handleSwipe(e.touches[0].clientX);
 });
 
 function handleSwipe(endX) {
   const mainWidth = document.body.clientWidth;
   const swipeTo = endX > mainWidth / 2 ? true : false;
-
-  console.log(swipeTo);
   if (swipeTo) {
     heroNext();
   } else {
