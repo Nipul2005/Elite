@@ -10,6 +10,8 @@ const dipCourses = document.getElementById("dip-courses");
 const certiCourses = document.getElementById("certi-courses");
 const MobileExParent = document.getElementById("mobile-ex-parent");
 const MobileExCourses = document.getElementById("mobile-ex-courses");
+
+
 let flag = true;
 let mobileFlag = true;
 let desktopFlag = true;
