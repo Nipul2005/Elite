@@ -28,8 +28,8 @@
 
     <!-- SEO starts here  -->
     <title>
-      Best Computer Institute in delhi | Placement and job-ready training | Elite Computer
-      Institute
+      Best Computer Institute in delhi | Placement and job-ready training |
+      Elite Computer Institute
     </title>
     <meta
       name="description"
@@ -487,19 +487,47 @@
       </section>
 
       <!-- second section -->
-      <section class="w-full sm:py-18 pb-7">
+      <section class="w-full md:py-18 pb-7">
         <div
-          class="sm:container sm:mx-auto px-4 flex md:flex-row flex-col justify-center items-center gap-6"
+          class="sm:container sm:mx-auto px-4  md:gap-0 space-y-8"
         >
-          <div class="flex-2 w-full space-y-5">
+          <div class="w-full flex md:flex-row flex-col justify-between items-center gap-8">
             <h2
-              class="w-full text-pure lg:text-5xl md:text-4xl text-3xl text-start border-b border-primary pb-4 md:leading-15 leading-10"
+              class="md:max-w-4/6 w-full text-pure lg:text-5xl md:text-4xl text-3xl text-start border-b border-primary pb-4 md:leading-15 leading-10"
             >
               Looking for a <br />
               best Computer Institute in Delhi ?
             </h2>
-            <p class="w-full text-pure text-lg">
-              Welcome to Elite Computer Institute, which is Delhi's best
+            <form
+              class="md:max-w-2/6 w-full flex flex-col gap-4 justify-center items-center self-stretch"
+              id="form"
+            >
+              <div
+                class="w-full border border-pure/20 rounded-full flex justify-between items-center pl-1 pr-3 py-2"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter your Mobile Number"
+                  class="flex-1 outline-none transition duration-200 ease-in-out px-3"
+                  name="phone"
+                  required
+                  autocomplete="off"
+                  maxlength="10"
+                  pattern="\d{10}"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                />
+              </div>
+              <button
+                class="bg-primary w-full text-white px-6 py-2 rounded-full cursor-pointer hover:bg-primary/80 transition-all duration-300 ease-in-out"
+                id="btn"
+              >
+                Enquiry Now
+              </button>
+            </form>
+          </div>
+          <!-- enqury form -->
+           <p class="w-full text-pure text-lg">
+              Welcome to Elite Computer Institute, Which is Delhi's best
               computer institute for students and professionals. We offer a wide
               range of computer courses in Delhi, which are designed to equip
               the skills required to succeed in today's competitive job market.
@@ -524,35 +552,6 @@
                 >View More</a
               >
             </p>
-          </div>
-
-          <!-- enqury form -->
-          <form
-            class="flex-1 w-full flex flex-col gap-4 justify-center items-center self-stretch"
-            id="form"
-          >
-            <div
-              class="w-full border border-pure/20 rounded-full flex justify-between items-center pl-1 pr-3 py-2"
-            >
-              <input
-                type="text"
-                placeholder="Enter your Mobile Number"
-                class="flex-1 outline-none transition duration-200 ease-in-out px-3"
-                name="phone"
-                required
-                autocomplete="off"
-                maxlength="10"
-                pattern="\d{10}"
-                oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-              />
-            </div>
-            <button
-              class="bg-primary w-full text-white px-6 py-2 rounded-full cursor-pointer hover:bg-primary/80 transition-all duration-300 ease-in-out"
-              id="btn"
-            >
-              Enquiry Now
-            </button>
-          </form>
         </div>
       </section>
 
