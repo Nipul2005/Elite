@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles and favicon -->
+    <link href="./src/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <title>Admin Login</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-black/90 p-4">
+    <div
+      class="bg-white shadow-lg rounded-2xl w-full max-w-xl p-6 pt-8"
+      id="change"
+    >
+      <h1 class="text-3xl font-bold text-center text-primary mb-6">
+        Admin Login
+      </h1>
+      <div class="w-full h-full">
+        <form class="space-y-4" id="form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            value="Nipul Pandit"
+            class="w-full px-4 py-2 border-b border-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value="pnipul7678@gmail.com"
+            class="w-full px-4 py-2 border-b border-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+          />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value="Nipul2005@"
+            placeholder="Enter your password"
+            class="w-full px-4 py-2 border-b border-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+          />
+
+          <button
+            class="flex w-full justify-center items-center gap-4 text-primary text-lg font-semibold mt-4"
+            type="submit"
+            id="btn"
+          >
+            Login
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              class="hover:translate-x-2 transition-all ease-in duration-300"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

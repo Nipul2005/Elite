@@ -3,7 +3,7 @@
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/courses", "destination": "/courses.html" },
+    { "source": "/admin", "destination": "/admin.html" },
     {
       "source": "/courses/Diploma-Computer-Teacher-Training-in-delhi",
       "destination": "/courses/Diploma-Computer-Teacher-Training-in-delhi.html"
