@@ -5,6 +5,8 @@ const nextSlide = document.getElementById("next");
 const prevSlide = document.getElementById("prev");
 const galleryImage = document.getElementById("galleryImage");
 import { devUrl, prodUrl } from "./constant.js";
+
+const url = window.location.hostname === "localhost" ? devUrl : prodUrl;
 var images;
 let currentIdx = 0;
 let galleryId = 0;
@@ -26,12 +28,13 @@ window.openViever = function (id) {
             </p>
           </span>`;
 
-  galleryImage.src = images[id].url[0].url;
+  galleryImage.src = images[id].url[1][0].secure_url;
   galleryId = id;
 };
 
 async function fetchGallery() {
-  const result = await fetch(`${devUrl}/gallery`);
+  const result = await fetch(`${url}/gallery`);
+
   const { data } = await result.json();
   images = data;
 
@@ -40,15 +43,14 @@ async function fetchGallery() {
   data.map((item, id) => {
     gallery.innerHTML += `
         <div
-            class="col-span-1 shrink-0 w-full max-h-64 overflow-hidden relative group shadow-xl rounded-lg hover:shadow-2xl cursor-pointer"
-            tabindex=${id}
+            class="col-span-1 shrink-0 w-full h-[${item.url[0].height}px] md:h-[250px] relative overflow-hidden group shadow-xl rounded-lg hover:shadow-2xl cursor-pointer flex justify-center items-center"
             onClick="openViever(${id})"
           >
             <img
-              src=${item.url[0].url}
+              src="${item.url[0].secure_url}"
               lazy="loading"
               alt="Elite Computer Institute ${id}"
-              class="w-full h-full object-center ease-in duration-200 cursor-pointer"
+              class=""
             />
             <span
               class="absolute left-0 bottom-0 z-10 px-4 py-3 flex flex-col gap-y-1 justify-end items-start text-white bg-black/95 group-hover:-bottom-50 transition-all duration-500 ease-in w-full"
@@ -64,15 +66,15 @@ async function fetchGallery() {
 }
 
 function next() {
-  currentIdx = (currentIdx + 1) % images[galleryId].url.length;
-  galleryImage.src = images[galleryId].url[currentIdx].url;
+  currentIdx = (currentIdx + 1) % images[galleryId].url[1].length;
+  galleryImage.src = images[galleryId].url[1][currentIdx].secure_url;
 }
 
 function prev() {
   currentIdx =
-    (currentIdx - 1 + images[galleryId].url.length) %
-    images[galleryId].url.length;
-  galleryImage.src = images[galleryId].url[currentIdx].url;
+    (currentIdx - 1 + images[galleryId].url[1].length) %
+    images[galleryId].url[1].length;
+  galleryImage.src = images[galleryId].url[1][currentIdx].secure_url;
 }
 
 nextSlide.addEventListener("click", next);

@@ -11,6 +11,7 @@ export default defineConfig({
         about: resolve(__dirname, "about.html"),
         contact: resolve(__dirname, "contact.html"),
         admin: resolve(__dirname, "admin.html"),
+        gallery: resolve(__dirname, "gallery.html"),
         "courses/Diploma-Computer-Teacher-Training-in-delhi": resolve(
           __dirname,
           "courses/Diploma-Computer-Teacher-Training-in-delhi.html"

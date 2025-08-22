@@ -3,6 +3,8 @@ const btn = document.getElementById("btn");
 const changer = document.getElementById("change");
 import { devUrl, prodUrl } from "./constant.js";
 
+const url = window.location.hostname === "localhost" ? devUrl : prodUrl;
+
 let html = ` <form
           class="space-y-10 w-full"
           id="gallery_form"
@@ -51,6 +53,7 @@ let html = ` <form
               >
               <input type="file" accept="image/jpeg, image/png, image/jpg, image/webp" multiple class="hidden" name="files" id="files" required/>
             </label>
+            
           </div>
 
           <!-- Submit Button -->
@@ -91,7 +94,7 @@ form.addEventListener("submit", async (e) => {
   const formdata = new FormData(e.target);
   const object = Object.fromEntries(formdata.entries());
 
-  const response = await fetch(`${devUrl}/login`, {
+  const response = await fetch(`${url}/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -117,7 +120,7 @@ galleryForm.addEventListener("submit", async (e) => {
   gallery_btn.innerHTML = "Submitting...";
   e.preventDefault();
   const formdata = new FormData(e.target);
-  const response = await fetch(`${devUrl}/upload`, {
+  const response = await fetch(`${url}/upload`, {
     method: "POST",
     body: formdata,
   });
