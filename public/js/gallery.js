@@ -75,7 +75,7 @@ window.openViever = function (id) {
 };
 
 async function fetchGallery() {
-  const laoder = `<div class="flex justify-center items-center w-10 h-10 animate-spin rounded-full border-2 border-solid border-primary border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>`;
+  const laoder = `<div class="col-span-3 w-10 h-10 animate-spin rounded-full border-2 border-solid border-primary border-r-transparent "></div>`;
   gallery.innerHTML = laoder;
   const result = await fetch(`${url}/gallery`);
 
