@@ -48,7 +48,7 @@ window.openViever = function (id) {
   );
   galleryId = id;
   imageDetails.innerHTML = `<span class="space-y-3  ">
-            <h2 class="text-2xl font-semibold text-primary border-b w-full pb-3 user-select-none">
+            <h2 class="text-3xl font-semibold text-primary border-b w-full pb-3 user-select-none">
               ${images[galleryId].eventName}
             </h2>
             <p class="text-pure user-select-none">
