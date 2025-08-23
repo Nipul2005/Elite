@@ -2,11 +2,9 @@ const gallery = document.getElementById("gallery");
 const gallerySection = document.getElementById("gallerySection");
 const imageDetails = document.getElementById("imageDetails");
 const nextSlide = document.getElementById("next");
-const prevSlide = document.getElementById("prev");
 const galleryImage = document.getElementById("galleryImage");
 const galleryBtn = document.getElementById("galleryBtn");
 const closeBtn = document.getElementById("closeBtn");
-const arrow = document.getElementById("arrows");
 import { devUrl, prodUrl } from "./constant.js";
 
 const url = window.location.hostname === "localhost" ? devUrl : prodUrl;
@@ -16,17 +14,14 @@ let galleryId = 0;
 
 function show(id) {
   images[id].url[1].length == 1
-    ? (arrow.style.visibility = "hidden")
-    : (arrow.style.visibility = "visible");
-  images[id].url[1].length == 1
-    ? (arrow.style.visibility = "hidden")
-    : (arrow.style.visibility = "visible");
+    ? (nextSlide.style.visibility = "hidden")
+    : (nextSlide.style.visibility = "visible");
 }
 
 galleryBtn.addEventListener("click", () => {
   galleryId = (galleryId + 1) % images.length;
   imageDetails.innerHTML = `<span class="space-y-3  ">
-            <h2 class="text-2xl font-semibold text-primary border-b w-full pb-3 user-select-none">
+            <h2 class="text-3xl font-semibold text-primary border-b w-full pb-3 user-select-none">
               ${images[galleryId].eventName}
             </h2>
             <p class="text-pure user-select-none">
@@ -40,7 +35,7 @@ galleryBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   gallerySection.classList.remove(
     "opacity-100",
-    "h-[100vh]",
+    "min-h-[100vh]",
     "sm:py-18",
     "py-12",
     "px-4",
@@ -58,7 +53,7 @@ window.openViever = function (id) {
 
   gallerySection.classList.add(
     "opacity-100",
-    "h-[100vh]",
+    "min-h-[100vh]",
     "sm:py-18",
     "py-12",
     "px-4",
@@ -120,14 +115,6 @@ function next() {
   galleryImage.src = images[galleryId].url[1][currentIdx].secure_url;
 }
 
-function prev() {
-  currentIdx =
-    (currentIdx - 1 + images[galleryId].url[1].length) %
-    images[galleryId].url[1].length;
-  galleryImage.src = images[galleryId].url[1][currentIdx].secure_url;
-}
-
 nextSlide.addEventListener("click", next);
-prevSlide.addEventListener("click", prev);
 
 window.onload = fetchGallery;
