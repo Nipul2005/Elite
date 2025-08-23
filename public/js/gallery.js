@@ -6,12 +6,22 @@ const prevSlide = document.getElementById("prev");
 const galleryImage = document.getElementById("galleryImage");
 const galleryBtn = document.getElementById("galleryBtn");
 const closeBtn = document.getElementById("closeBtn");
+const arrow = document.getElementById("arrows");
 import { devUrl, prodUrl } from "./constant.js";
 
 const url = window.location.hostname === "localhost" ? devUrl : prodUrl;
 var images;
 let currentIdx = 0;
 let galleryId = 0;
+
+function show(id) {
+  images[id].url[1].length == 1
+    ? (arrow.style.visibility = "hidden")
+    : (arrow.style.visibility = "visible");
+  images[id].url[1].length == 1
+    ? (arrow.style.visibility = "hidden")
+    : (arrow.style.visibility = "visible");
+}
 
 galleryBtn.addEventListener("click", () => {
   galleryId = (galleryId + 1) % images.length;
@@ -24,6 +34,7 @@ galleryBtn.addEventListener("click", () => {
             </p>
           </span>`;
   galleryImage.src = images[galleryId].url[1][0].secure_url;
+  show(galleryId);
 });
 
 closeBtn.addEventListener("click", () => {
@@ -31,22 +42,32 @@ closeBtn.addEventListener("click", () => {
     "opacity-100",
     "h-[100vh]",
     "sm:py-18",
-    "py-7",
+    "py-12",
     "px-4",
-    "z-50"
+    "z-50",
+    "shadow-2xl",
+    "shadow-2xl",
+    "border-b-4",
+    "border-primary"
   );
 });
 
 window.openViever = function (id) {
+  galleryId = id;
+  show(galleryId);
+
   gallerySection.classList.add(
     "opacity-100",
     "h-[100vh]",
     "sm:py-18",
-    "py-7",
+    "py-12",
     "px-4",
-    "z-50"
+    "z-50",
+    "shadow-2xl",
+    "border-b-4",
+    "border-primary"
   );
-  galleryId = id;
+
   imageDetails.innerHTML = `<span class="space-y-3  ">
             <h2 class="text-3xl font-semibold text-primary border-b w-full pb-3 user-select-none">
               ${images[galleryId].eventName}
@@ -55,7 +76,6 @@ window.openViever = function (id) {
               ${images[galleryId].desc}
             </p>
           </span>`;
-
   galleryImage.src = images[galleryId].url[1][0].secure_url;
 };
 
@@ -111,4 +131,3 @@ nextSlide.addEventListener("click", next);
 prevSlide.addEventListener("click", prev);
 
 window.onload = fetchGallery;
- 

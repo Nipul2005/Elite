@@ -85,7 +85,7 @@
   </head>
   <body class="w-full h-auto relative">
     <div
-      class="w-full fixed -top-52 bg-primary z-30 h-auto flex justify-between items-center gap-3 transition-all duration-500 ease-in-out md:hidden px-4 py-7"
+      class="w-full fixed -top-70 bg-primary z-30 h-auto flex justify-between items-center gap-3 transition-all duration-500 ease-in-out lg:hidden px-4 py-7"
       id="sidebar"
     >
       <ul class="flex flex-col gap-y-3 text-lg text-white w-full">
@@ -228,6 +228,14 @@
             Contact
           </a>
         </li>
+        <li>
+            <a
+              href="/gallery"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-white after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >
+              Gallery
+            </a>
+          </li>
       </ul>
       <i
         class="ri-close-large-line text-white cursor-pointer text-lg self-start"
@@ -250,7 +258,7 @@
             title="Elite Computer Institute"
           />
         </a>
-        <ul class="md:flex gap-8 text-lg hidden text-black">
+        <ul class="lg:flex gap-8 text-lg hidden text-black">
           <li class="w-full">
             <a
               href="/"
@@ -380,14 +388,22 @@
               Contact
             </a>
           </li>
+          <li>
+            <a
+              href="/gallery"
+              class="relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full"
+            >
+              Gallery
+            </a>
+          </li>
         </ul>
         <i
-          class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
+          class="ri-menu-2-line text-primary text-2xl lg:hidden cursor-pointer"
           id="open"
         ></i>
         <a
           href="/contact"
-          class="bg-primary hover:bg-primary/80 duration-200 text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
+          class="bg-primary hover:bg-primary/80 duration-200 text-white px-6 py-2 rounded-full cursor-pointer hidden lg:block"
         >
           Enroll Now
         </a>

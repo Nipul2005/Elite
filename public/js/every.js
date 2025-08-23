@@ -11,18 +11,17 @@ const certiCourses = document.getElementById("certi-courses");
 const MobileExParent = document.getElementById("mobile-ex-parent");
 const MobileExCourses = document.getElementById("mobile-ex-courses");
 
-
 let flag = true;
 let mobileFlag = true;
 let desktopFlag = true;
 
 function openSidebar() {
-  sidebar.classList.remove("-top-50");
+  sidebar.classList.remove("-top-70");
   sidebar.classList.add("top-0");
 }
 
 function closeSidebar() {
-  sidebar.classList.add("-top-50");
+  sidebar.classList.add("-top-70");
   sidebar.classList.remove("top-0");
 }
 

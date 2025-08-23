@@ -17,7 +17,7 @@
   <body class="w-full h-auto relative">
     <!-- mobile header -->
     <div
-      class="w-full fixed -top-65 bg-primary z-30 h-auto flex justify-between items-center gap-3 transition-all duration-500 ease-in-out md:hidden px-4 py-7"
+      class="w-full fixed -top-70 bg-primary z-30 h-auto flex justify-between items-center gap-3 transition-all duration-500 ease-in-out lg:hidden px-4 py-7"
       id="sidebar"
     >
       <ul class="flex flex-col gap-y-3 text-lg text-white w-full">
@@ -190,7 +190,7 @@
             title="Elite Computer Institute"
           />
         </a>
-        <ul class="md:flex gap-8 text-lg hidden text-black">
+        <ul class="lg:flex gap-8 text-lg hidden text-black">
           <li class="w-full">
             <a
               href="/"
@@ -328,12 +328,12 @@
           </li>
         </ul>
         <i
-          class="ri-menu-2-line text-primary text-2xl md:hidden cursor-pointer"
+          class="ri-menu-2-line text-primary text-2xl lg:hidden cursor-pointer"
           id="open"
         ></i>
         <a
           href="/contact"
-          class="bg-primary hover:bg-primary/80 duration-200 text-white px-6 py-2 rounded-full cursor-pointer hidden md:block"
+          class="bg-primary hover:bg-primary/80 duration-200 text-white px-6 py-2 rounded-full cursor-pointer hidden lg:block"
         >
           Enroll Now
         </a>
@@ -352,7 +352,7 @@
         </h1>
       </section>
       <section
-        class="h-0 transition-all ease-in duration-500 opacity-0 absolute top-0 z-50 bg-white left-0 w-full"
+        class="h-0 transition-all ease-in duration-500 opacity-0 absolute top-0 bg-white left-1/2 w-full transform -translate-x-1/2 -translate-y-0"
         id="gallerySection"
       >
         <div
@@ -360,8 +360,8 @@
         >
           <div class="flex-1 self-start" id="imageDetails"></div>
           <div class="flex-2 flex flex-col justify-center items-center">
-            <span class="w-full flex justify-between items-center gap-4 mb-4">
-              <span class="w-full flex justify-start items-center gap-8">
+            <span class="w-full flex justify-around items-center gap-4 mb-4">
+              <span class="flex justify-around items-center gap-8">
                 <button
                   id="closeBtn"
                   class="bg-primary text-white py-2 px-8 rounded-full cursor-pointer"
@@ -375,7 +375,7 @@
                   Next
                 </button>
               </span>
-              <span class="w-full flex justify-end items-center gap-4"
+              <span id="arrows" class="flex justify-end items-center gap-4"
                 ><i
                   class="ri-arrow-left-double-line w-9 h-9 flex justify-center items-center rounded-full bg-primary text-white text-lg shrink-0 cursor-pointer user-select-none"
                   id="prev"
