@@ -29,7 +29,7 @@ galleryBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   gallerySection.classList.remove(
     "opacity-100",
-    "h-auto",
+    "h-[100vh]",
     "sm:py-18",
     "py-7",
     "px-4",
@@ -40,7 +40,7 @@ closeBtn.addEventListener("click", () => {
 window.openViever = function (id) {
   gallerySection.classList.add(
     "opacity-100",
-    "h-auto",
+    "h-[100vh]",
     "sm:py-18",
     "py-7",
     "px-4",
