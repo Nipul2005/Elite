@@ -111,3 +111,4 @@ nextSlide.addEventListener("click", next);
 prevSlide.addEventListener("click", prev);
 
 window.onload = fetchGallery;
+ 
