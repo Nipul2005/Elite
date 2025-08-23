@@ -352,36 +352,54 @@
         </h1>
       </section>
       <section
-        class="sm:container sm:mx-auto h-0 flex md:flex-row flex-col justify-between items-center gap-5 transition ease-in duration-500 overflow-hidden opacity-0 user-select-none"
+        class="h-0 transition-all ease-in duration-500 opacity-0 absolute top-0 z-50 bg-white left-0 w-full"
         id="gallerySection"
       >
-        <div class="flex-1 self-start" id="imageDetails"></div>
-        <div class="flex-2 flex flex-col justify-center items-center gap-2">
-          <span class="w-full flex justify-end items-center gap-4">
-            <i
-              class="ri-arrow-left-double-line w-9 h-9 flex justify-center items-center rounded-full bg-primary text-white text-lg shrink-0 cursor-pointer user-select-none"
-              id="prev"
-            ></i>
-            <i
-              class="ri-arrow-right-double-line w-9 h-9 flex justify-center items-center rounded-full bg-primary text-white text-lg shrink-0 cursor-pointer user-select-none"
-              id="next"
-            ></i>
-          </span>
+        <div
+          class="sm:container sm:mx-auto flex md:flex-row flex-col justify-center items-center gap-5"
+        >
+          <div class="flex-1 self-start" id="imageDetails"></div>
+          <div class="flex-2 flex flex-col justify-center items-center gap-2">
+            <span class="w-full flex justify-end items-center gap-4 mb-4">
+              <i
+                class="ri-arrow-left-double-line w-9 h-9 flex justify-center items-center rounded-full bg-primary text-white text-lg shrink-0 cursor-pointer user-select-none"
+                id="prev"
+              ></i>
+              <i
+                class="ri-arrow-right-double-line w-9 h-9 flex justify-center items-center rounded-full bg-primary text-white text-lg shrink-0 cursor-pointer user-select-none"
+                id="next"
+              ></i>
+            </span>
 
-          <div class="w-full p-2 h-auto overflow-hidden">
-            <div
-              class="w-full flex justify-start items-start duration-400 ease-in gap-2"
-              id="galleryCarousel"
-            >
-              <img
-                alt="Elite Computer Institute ${index}"
-                lazy="loading"
-                class="flex-1 shrink-0 user-select-none shadow-xl"
-                id="galleryImage"
-              />
+            <div class="w-full p-2 h-auto overflow-hidden">
+              <div
+                class="w-full flex justify-center items-start duration-400 ease-in gap-2"
+                id="galleryCarousel"
+              >
+                <img
+                  alt="Elite Computer Institute ${index}"
+                  lazy="loading"
+                  class="shadow-xl"
+                  id="galleryImage"
+                />
+              </div>
             </div>
           </div>
         </div>
+        <span class="w-full flex justify-between mt-10 px-10">
+          <button
+            id="closeBtn"
+            class="bg-primary text-white py-2 px-8 rounded-full cursor-pointer"
+          >
+            Close
+          </button>
+          <button
+            id="galleryBtn"
+            class="bg-primary text-white py-2 px-8 rounded-full cursor-pointer"
+          >
+            Next
+          </button>
+        </span>
       </section>
       <section
         class="w-full h-auto sm:py-18 py-7 px-4 border-t-3 border-primary"

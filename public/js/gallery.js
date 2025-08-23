@@ -4,6 +4,8 @@ const imageDetails = document.getElementById("imageDetails");
 const nextSlide = document.getElementById("next");
 const prevSlide = document.getElementById("prev");
 const galleryImage = document.getElementById("galleryImage");
+const galleryBtn = document.getElementById("galleryBtn");
+const closeBtn = document.getElementById("closeBtn");
 import { devUrl, prodUrl } from "./constant.js";
 
 const url = window.location.hostname === "localhost" ? devUrl : prodUrl;
@@ -11,31 +13,59 @@ var images;
 let currentIdx = 0;
 let galleryId = 0;
 
+galleryBtn.addEventListener("click", () => {
+  galleryId = (galleryId + 1) % images.length;
+  imageDetails.innerHTML = `<span class="space-y-3  ">
+            <h2 class="text-2xl font-semibold text-primary border-b w-full pb-3 user-select-none">
+              ${images[galleryId].eventName}
+            </h2>
+            <p class="text-pure user-select-none">
+              ${images[galleryId].desc}
+            </p>
+          </span>`;
+  galleryImage.src = images[galleryId].url[1][0].secure_url;
+});
+
+closeBtn.addEventListener("click", () => {
+  gallerySection.classList.remove(
+    "opacity-100",
+    "h-auto",
+    "sm:py-18",
+    "py-7",
+    "px-4",
+    "z-50"
+  );
+});
+
 window.openViever = function (id) {
   gallerySection.classList.add(
     "opacity-100",
     "h-auto",
     "sm:py-18",
     "py-7",
-    "px-4"
+    "px-4",
+    "z-50"
   );
-  imageDetails.innerHTML = `<span class="space-y-3">
-            <h2 class="text-2xl font-semibold text-primary border-b w-full pb-3">
-              ${images[id].eventName}
+  galleryId = id;
+  imageDetails.innerHTML = `<span class="space-y-3  ">
+            <h2 class="text-2xl font-semibold text-primary border-b w-full pb-3 user-select-none">
+              ${images[galleryId].eventName}
             </h2>
-            <p class="text-pure">
-              ${images[id].desc}
+            <p class="text-pure user-select-none">
+              ${images[galleryId].desc}
             </p>
           </span>`;
 
-  galleryImage.src = images[id].url[1][0].secure_url;
-  galleryId = id;
+  galleryImage.src = images[galleryId].url[1][0].secure_url;
 };
 
 async function fetchGallery() {
+  const laoder = `<div class="flex justify-center items-center w-10 h-10 animate-spin rounded-full border-2 border-solid border-primary border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>`;
+  gallery.innerHTML = laoder;
   const result = await fetch(`${url}/gallery`);
 
   const { data } = await result.json();
+  gallery.innerHTML = "";
   images = data;
 
   if (data.length === 0)
@@ -53,7 +83,7 @@ async function fetchGallery() {
               class=""
             />
             <span
-              class="absolute left-0 bottom-0 z-10 px-4 py-3 flex flex-col gap-y-1 justify-end items-start text-white bg-black/95 group-hover:-bottom-50 transition-all duration-500 ease-in w-full"
+              class="absolute left-0 bottom-0 z-10 px-5 py-3 flex flex-col gap-y-1 justify-end items-start text-black bg-white/80 backdrop-blur-md group-hover:-bottom-50 transition-all duration-500 ease-in w-full"
             >
               <h2 class="text-2xl font-semibold">${item.eventName}</h2>
               <p class="line-clamp-2">
