@@ -72,6 +72,7 @@ window.openViever = function (id) {
             </p>
           </span>`;
   galleryImage.src = images[galleryId].url[1][0].secure_url;
+  gallerySection.scrollIntoView({ behavior: "smooth" });
 };
 
 async function fetchGallery() {
