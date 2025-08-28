@@ -32,7 +32,7 @@ let html = ` <form
           <!-- File Upload (Dropzone Style) -->
           <div>
             <label
-              class="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed border-gray-300 rounded-xl cursor-pointer bg-gray-50 hover:border-primary hover:bg-primary/5 transition"
+              class="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed border-gray-300 rounded-xl cursor-pointer bg-gray-50 hover:border-primary hover:bg-primary/5 transition relative"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,8 @@ let html = ` <form
               <span class="text-sm text-gray-500"
                 >Click to upload or drag & drop</span
               >
-              <input type="file" accept="image/jpeg, image/png, image/jpg, image/webp" multiple class="hidden" name="files" id="files" required/>
+              <input type="file" accept="image/jpeg, image/png, image/jpg, image/webp" multiple class="opacity-0" name="files" id="files" required/>
+              <span id="count" class="absolute -top-3 -right-2 w-8 h-8 text-sm text-white bg-primary flex justify-center items-center rounded-full opacity-0"></span>
             </label>
             
           </div>
@@ -86,10 +87,13 @@ const div = document.createElement("div");
 div.innerHTML = html;
 const galleryForm = div.querySelector("#gallery_form");
 const gallery_btn = div.querySelector("#gallery_btn");
+const galleryInput = div.querySelector("#files");
+const filecount = div.querySelector("#count");
 
 form.addEventListener("submit", async (e) => {
   btn.disabled = true;
-  btn.innerHTML = "Submitting...";
+  const laoder = `<div class="col-span-3 w-8 h-8 animate-spin rounded-full border-2 border-solid border-primary border-r-transparent "></div>`;
+  btn.innerHTML = laoder;
   e.preventDefault();
   const formdata = new FormData(e.target);
   const object = Object.fromEntries(formdata.entries());
@@ -117,7 +121,8 @@ form.addEventListener("submit", async (e) => {
 
 galleryForm.addEventListener("submit", async (e) => {
   gallery_btn.disabled = true;
-  gallery_btn.innerHTML = "Submitting...";
+  const laoder = `<div class="col-span-3 w-8 h-8 animate-spin rounded-full border-2 border-solid border-primary border-r-transparent "></div>`;
+  gallery_btn.innerHTML = laoder;
   e.preventDefault();
   const formdata = new FormData(e.target);
   const response = await fetch(`${url}/upload`, {
@@ -135,4 +140,13 @@ galleryForm.addEventListener("submit", async (e) => {
   window.location.href = "/gallery";
   gallery_btn.disabled = false;
   gallery_btn.innerHTML = "Submit";
+  filecount.classList.add("opacity-0")
+});
+
+
+galleryInput.addEventListener("change", (e) => {
+  if(e.target.files.length > 0){
+    filecount.classList.remove("opacity-0")
+    filecount.innerText = e.target.files.length
+  }
 });
